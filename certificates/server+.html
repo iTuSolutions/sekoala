@@ -13,7 +13,6 @@
   <link href="https://www.sekoala.co.za/" rel="canonical"/>
 
   
-  <link rel="stylesheet" href="../css/styles.css">
   
   <!-- Tailwind CSS Integration CDN & Custom Theme Config -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -201,34 +200,7 @@
   }
   </script>
 
-  <!-- Custom Animation Styles -->
-  <style>
-    /* Base hidden state */
-    .scroll-anim {
-      opacity: 0;
-      will-change: transform, opacity;
-      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    }
 
-    /* Bi-directional Keyframe Definitions */
-    .scroll-anim[data-anim="fade-right"] { transform: translateX(-40px); }
-    .scroll-anim[data-anim="fade-right"].is-visible { transform: translateX(0); opacity: 1; }
-
-    .scroll-anim[data-anim="fade-left"] { transform: translateX(40px); }
-    .scroll-anim[data-anim="fade-left"].is-visible { transform: translateX(0); opacity: 1; }
-
-    .scroll-anim[data-anim="fade-down"] { transform: translateY(-40px); }
-    .scroll-anim[data-anim="fade-down"].is-visible { transform: translateY(0); opacity: 1; }
-
-    .scroll-anim[data-anim="fade-up"] { transform: translateY(40px); }
-    .scroll-anim[data-anim="fade-up"].is-visible { transform: translateY(0); opacity: 1; }
-
-    .scroll-anim[data-anim="middle-in"] { transform: scale(1.15); }
-    .scroll-anim[data-anim="middle-in"].is-visible { transform: scale(1); opacity: 1; }
-
-    .scroll-anim[data-anim="middle-out"] { transform: scale(0.85); }
-    .scroll-anim[data-anim="middle-out"].is-visible { transform: scale(1); opacity: 1; }
-  </style>
 </head>
   
 <body class='bg-cyan-50 text-slate-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 min-h-screen'>
