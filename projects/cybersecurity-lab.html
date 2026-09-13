@@ -1,24 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Lab Project - Portfolio</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../resume/index.html">Resume</a></li>
-                <li><a href="../certificates/index.html">Certificates</a></li>
-                <li><a href="index.html">Projects</a></li>
-                <li><a href="../contact/index.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
+  <!-- SEO & Search Engine Optimization Meta Tags -->
+  <meta name="description" content="Sekoala's IT & Network Engineering Portfolio">
+  <meta content="Official portfolio and professional hub of Sekoala Daniel Bopape. Explore IT networking, security solutions, resume, and technical expertise." name="description"/>
+  <meta content="Sekoala, IT Technician, Network Engineer, Security Officer, Polokwane, South Africa, Portfolio, Resume" name="keywords"/>
+  <meta content="Sekoala Daniel Bopape" name="author"/>
+  <title>Cybersecurity Lab Project - Portfolio</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  
+  <link href="https://www.sekoala.co.za/" rel="canonical"/>
+
+  
+  <!-- Tailwind CSS Integration CDN & Custom Theme Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              900: '#0c4a6e',
+            },
+            darkbg: '#0f172a',
+            darkcard: '#1e293b'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome 6 Icons -->
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" rel="stylesheet"/>
+
+  <!-- Favicon & Site Icons -->
+  <link href="https://www.sekoala.co.za/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://www.sekoala.co.za/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="https://www.sekoala.co.za/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="https://www.sekoala.co.za/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+
+  <!-- Search Engine Verifications & Feed Links -->
+  <link href="https://www.sekoala.co.za/feeds/posts/default" rel="alternate" title="Sekoala | RSS Feed" type="application/rss+xml"/>
+  <link href="https://www.sekoala.co.za/feeds/posts/default?alt=atom" rel="alternate" title="Sekoala | Atom Feed" type="application/atom+xml"/>
+  <link href="https://www.sekoala.co.za/sitemap.xml" rel="sitemap" title="Sitemap" type="application/xml"/>
+  <link href="https://www.sekoala.co.za/sitemap.xml?type=rss" rel="sitemap" title="RSS Sitemap" type="application/rss+xml"/>
+
+  <!-- Microsoft Clarity Analytics -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "y3qdhcjxsi");
+  </script>
+
+  <meta content="73A456F8AA3E8133B752E6AAFCCE940F" name="msvalidate.01"/>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KSTRDP6H');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-G6XQZRTLZ3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G6XQZRTLZ3');
+  </script>
+
+  <meta content="_OnsAylom5--XcLxkj6hcC221sOEWPyjR3u6PMTrvyo" name="google-site-verification"/>
+  <meta content="4699637a26d7d589" name="yandex-verification"/>
+  <meta content="YOUR_PINTEREST_VERIFICATION_CODE_HERE" name="p:domain_verify"/>
+
+  <!-- Search Engine Meta Tags -->
+  <meta content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="robots"/>
+  <meta content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="googlebot"/>
+  <meta content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="bingbot"/>
+  <meta content="index, follow" name="msnbot"/>
+  <meta content="index, follow" name="slurp"/>
+  <meta content="index, follow" name="duckduckbot"/>
+  <meta content="index, follow" name="baiduspider"/>
+  <meta content="index, follow" name="yandex"/>
+  <meta content="index, follow" name="teoma"/>
+  <meta content="index, follow" name="ia_archiver"/>
+
+  <!-- Structured Data Enhancement 1: Breadcrumb Layer -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.sekoala.co.za/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data Enhancement 2: Sitelinks Schema Layer for Google Search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://www.sekoala.co.za/#person",
+        "name": "Sekoala Daniel Bopape",
+        "url": "https://www.sekoala.co.za/",
+        "jobTitle": "IT Technician & Network Engineer",
+        "sameAs": [
+          "https://www.it-u.co.za"
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "SiteNavigationElement",
+            "position": 1,
+            "name": "My Resume",
+            "url": "https://www.sekoala.co.za/p/my-resume.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
+            "name": "About Me",
+            "url": "https://www.sekoala.co.za/#about-section"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 3,
+            "name": "Hire Me",
+            "url": "https://www.sekoala.co.za/#job-opportunity"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 4,
+            "name": "Cover Letter",
+            "url": "https://www.sekoala.co.za/#cover-letter"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 5,
+            "name": "Certifications",
+            "url": "https://www.sekoala.co.za/#cert-section"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 6,
+            "name": "Experience",
+            "url": "https://www.sekoala.co.za/#experience"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 7,
+            "name": "FAQs",
+            "url": "https://www.sekoala.co.za/#faqs"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 8,
+            "name": "Contact Me",
+            "url": "https://www.sekoala.co.za/#contact-section"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 9,
+            "name": "Developer Portal",
+            "url": "https://www.it-u.co.za"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Custom Animation Styles -->
+  <style>
+    /* Base hidden state */
+    .scroll-anim {
+      opacity: 0;
+      will-change: transform, opacity;
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Bi-directional Keyframe Definitions */
+    .scroll-anim[data-anim="fade-right"] { transform: translateX(-40px); }
+    .scroll-anim[data-anim="fade-right"].is-visible { transform: translateX(0); opacity: 1; }
+
+    .scroll-anim[data-anim="fade-left"] { transform: translateX(40px); }
+    .scroll-anim[data-anim="fade-left"].is-visible { transform: translateX(0); opacity: 1; }
+
+    .scroll-anim[data-anim="fade-down"] { transform: translateY(-40px); }
+    .scroll-anim[data-anim="fade-down"].is-visible { transform: translateY(0); opacity: 1; }
+
+    .scroll-anim[data-anim="fade-up"] { transform: translateY(40px); }
+    .scroll-anim[data-anim="fade-up"].is-visible { transform: translateY(0); opacity: 1; }
+
+    .scroll-anim[data-anim="middle-in"] { transform: scale(1.15); }
+    .scroll-anim[data-anim="middle-in"].is-visible { transform: scale(1); opacity: 1; }
+
+    .scroll-anim[data-anim="middle-out"] { transform: scale(0.85); }
+    .scroll-anim[data-anim="middle-out"].is-visible { transform: scale(1); opacity: 1; }
+  </style>
+</head>
+<body class='bg-cyan-50 text-slate-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 min-h-screen'>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-KSTRDP6H" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- SECTION: Interactive Floating Action Bar -->
+<div class="floating-action-bar fixed z-50 bottom-4 left-1/2 -translate-x-1/2 flex flex-row space-x-2 md:space-x-0 md:space-y-3 md:bottom-auto md:left-auto md:right-4 md:top-1/2 md:-translate-y-1/2 md:flex-col bg-white/90 dark:bg-slate-900/90 backdrop-blur-md p-2 rounded-2xl shadow-2xl border border-cyan-500/30 dark:border-slate-800 transition-all duration-300">
+    
+  <!-- WhatsApp Button -->
+  <a aria-label="WhatsApp" class="float-btn group relative flex items-center justify-center w-10 h-10 md:w-11 md:h-11 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-xl shadow-md transition-all duration-300 transform hover:scale-105" href="https://wa.me/27711405870?text=Hello%20Sekoala,%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20job%20opportunity%20with%20you." rel="noopener noreferrer" target="_blank">
+    <i class="fa-brands fa-whatsapp text-lg md:text-xl"></i>
+    <span class="hidden md:block pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-slate-900 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-white shadow-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-slate-700/50">
+      Chat on WhatsApp
+    </span>
+  </a>
+
+  <!-- Phone Button -->
+  <a aria-label="Call Directly" class="float-btn group relative flex items-center justify-center w-10 h-10 md:w-11 md:h-11 bg-[#34A853] hover:bg-[#2e964a] text-white rounded-xl shadow-md transition-all duration-300 transform hover:scale-105" href="tel:0711405870">
+    <i class="fa-solid fa-phone text-base md:text-lg"></i>
+    <span class="hidden md:block pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-slate-900 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-white shadow-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-slate-700/50">
+      Call: 071 140-5870
+    </span>
+  </a>
+
+  <!-- Gmail Button -->
+  <a aria-label="Send Email" class="float-btn group relative flex items-center justify-center w-10 h-10 md:w-11 md:h-11 bg-[#EA4335] hover:bg-[#d9382a] text-white rounded-xl shadow-md transition-all duration-300 transform hover:scale-105" href="mailto:sekoalabopape@gmail.com">
+    <i class="fa-solid fa-envelope text-base md:text-lg"></i>
+    <span class="hidden md:block pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-slate-900 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-white shadow-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-slate-700/50">
+      Send Email
+    </span>
+  </a>
+
+  <!-- Back To Top Button -->
+  <a aria-label="Back to top" class="float-btn group relative flex items-center justify-center w-10 h-10 md:w-11 md:h-11 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-xl shadow-md transition-all duration-300 transform hover:scale-105" href="#top" id="back-to-top">
+    <i class="fa-solid fa-arrow-up text-base md:text-lg"></i>
+    <span class="hidden md:block pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-slate-900 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-white shadow-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-slate-700/50">
+      Back to top
+    </span>
+  </a>
+
+  <!-- Dark / Light Theme Toggle Switcher -->
+  <button aria-label="Toggle Theme" class="theme-toggle-btn group relative flex items-center justify-center w-10 h-10 md:w-11 md:h-11 bg-cyan-500 hover:bg-cyan-600 dark:bg-slate-800 dark:hover:bg-slate-700 text-white dark:text-cyan-400 rounded-xl shadow-md transition-all duration-300 transform hover:scale-105" id="themeToggle" type="button">
+    <i class="fa-solid fa-moon text-base md:text-lg" id="themeIcon"></i>
+    <span class="hidden md:block pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-slate-900 dark:bg-slate-800 px-3 py-1.5 text-xs font-medium text-white shadow-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-slate-700/50">
+      Toggle Light/Dark Theme
+    </span>
+  </button>
+
+</div>
+
+<!-- Site Header Section -->
+<header class="site-header fixed top-0 left-0 right-0 z-50 bg-cyan-500/95 dark:bg-gray-900/95 backdrop-blur-md border-b border-cyan-600/30 dark:border-gray-800 shadow-md transition-colors duration-300" id="mainHeader">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    
+    <!-- Brand Group -->
+    <a class="header-brand-group flex items-center space-x-3 scroll-anim cursor-pointer group" data-anim="fade-right" data-delay="100" href="https://www.sekoala.co.za/">
+      <img alt="Sekoala Daniel Bopape Logo" class="brand-logo-nav rounded-logo h-10 w-10 object-cover rounded-full border-2 border-white dark:border-cyan-400 shadow-sm scroll-anim group-hover:scale-105 transition-transform" data-anim="middle-out" data-delay="200" data-dark="https://res.cloudinary.com/dulmfdigk/image/upload/v1765936763/Black_White_Minimalist_Signature_Personal_Brand_Logo_20251001_145831_0001_jn93le.png" data-light="https://res.cloudinary.com/dulmfdigk/image/upload/v1765936762/Black_White_Minimalist_Signature_Personal_Brand_Logo_20251001_145830_0000_jvtg1p.png" id="header-logo-img" src="https://res.cloudinary.com/dulmfdigk/image/upload/v1765936762/Black_White_Minimalist_Signature_Personal_Brand_Logo_20251001_145830_0000_jvtg1p.png"/>
+      <div class="site-logo text-lg font-bold tracking-wider text-white dark:text-gray-100 scroll-anim" data-anim="fade-right" data-delay="300">
+        <span class="group-hover:text-cyan-100 dark:group-hover:text-cyan-400 transition-colors">
+          <span>SEKOALA</span> <span class="text-cyan-100 dark:text-cyan-400">BOPAPE</span>
+        </span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="navigation-menu hidden lg:flex items-center space-x-1" id="navMenu">
+      <ul class="flex items-center space-x-1 text-sm font-medium">
+<!-- Navigation Links for Projects Section Pages -->
+<li class="scroll-anim" data-anim="fade-down" data-delay="100">
+  <a class="flex items-center px-3 py-2 rounded-md text-white hover:bg-cyan-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-cyan-400 transition-all" href="../index.html">
+    <i class="fa-solid fa-house mr-2 text-cyan-200 dark:text-cyan-400"></i> Home
+  </a>
+</li>
+
+<li class="scroll-anim" data-anim="fade-down" data-delay="150">
+  <a class="flex items-center px-3 py-2 rounded-md text-white hover:bg-cyan-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-cyan-400 transition-all" href="../resume/index.html">
+    <i class="fa-solid fa-file-pdf mr-2 text-cyan-200 dark:text-cyan-400"></i> Resume
+  </a>
+</li>
+
+<li class="scroll-anim" data-anim="fade-up" data-delay="200">
+  <a class="flex items-center px-3 py-2 rounded-md text-white hover:bg-cyan-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-cyan-400 transition-all" href="../certificates/index.html">
+    <i class="fa-solid fa-certificate mr-2 text-cyan-200 dark:text-cyan-400"></i> Certificates
+  </a>
+</li>
+
+<li class="scroll-anim" data-anim="fade-right" data-delay="300">
+  <a class="flex items-center px-3 py-2 rounded-md text-white hover:bg-cyan-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-cyan-400 transition-all" href="index.html">
+    <i class="fa-solid fa-diagram-project mr-2 text-cyan-200 dark:text-cyan-400"></i> Projects
+  </a>
+</li>
+
+<li class="scroll-anim" data-anim="fade-left" data-delay="400">
+  <a class="flex items-center px-3 py-2 rounded-md text-white hover:bg-cyan-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-cyan-400 transition-all" href="../contact/index.html">
+    <i class="fa-solid fa-envelope mr-2 text-cyan-200 dark:text-cyan-400"></i> Contact
+  </a>
+</li>
+
+<li class="scroll-anim" data-anim="fade-left" data-delay="500">
+  <a class="flex items-center px-3 py-2 rounded-md bg-cyan-700 hover:bg-cyan-800 dark:bg-gray-800 dark:hover:bg-cyan-600 text-white transition-all font-semibold border border-cyan-400/30" href="https://www.it-u.co.za" rel="noopener noreferrer" target="_blank">
+    <i class="fa-solid fa-laptop-code mr-2 text-cyan-300 dark:text-cyan-400"></i> Portal
+  </a>
+</li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Hamburger Button -->
+    <button aria-label="Toggle menu" class="hamburger lg:hidden p-2 rounded-md text-slate-800 hover:bg-cyan-200 dark:text-gray-300 dark:hover:bg-gray-800 cursor-pointer transition-colors focus:outline-none scroll-anim" data-anim="middle-out" data-delay="200" id="hamburger">
+      <i class="fa-solid fa-bars-staggered text-xl"></i>
+    </button>
+
+  </div>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div class="hidden lg:hidden bg-cyan-600 dark:bg-gray-900 border-b border-cyan-700 dark:border-gray-800 px-4 pt-2 pb-4 space-y-1 shadow-lg" id="mobileNavMenu">
+<!-- Mobile Navigation Links for Projects Section Pages -->
+<a class="flex items-center px-3 py-2.5 rounded-md text-white dark:text-gray-200 hover:bg-cyan-700 dark:hover:bg-gray-800 font-medium scroll-anim" data-anim="fade-right" data-delay="100" href="../index.html">
+  <i class="fa-solid fa-house w-6 text-cyan-200 dark:text-cyan-400"></i> Home
+</a>
+
+<a class="flex items-center px-3 py-2.5 rounded-md text-white dark:text-gray-200 hover:bg-cyan-700 dark:hover:bg-gray-800 font-medium scroll-anim" data-anim="fade-up" data-delay="150" href="../resume/index.html">
+  <i class="fa-solid fa-file-pdf w-6 text-cyan-200 dark:text-cyan-400"></i> Resume
+</a>
+
+<a class="flex items-center px-3 py-2.5 rounded-md text-white dark:text-gray-200 hover:bg-cyan-700 dark:hover:bg-gray-800 font-medium scroll-anim" data-anim="fade-left" data-delay="200" href="../certificates/index.html">
+  <i class="fa-solid fa-certificate w-6 text-cyan-200 dark:text-cyan-400"></i> Certificates
+</a>
+
+<a class="flex items-center px-3 py-2.5 rounded-md text-white dark:text-gray-200 hover:bg-cyan-700 dark:hover:bg-gray-800 font-medium scroll-anim" data-anim="fade-down" data-delay="250" href="index.html">
+  <i class="fa-solid fa-diagram-project w-6 text-cyan-200 dark:text-cyan-400"></i> Projects
+</a>
+
+<a class="flex items-center px-3 py-2.5 rounded-md text-white dark:text-gray-200 hover:bg-cyan-700 dark:hover:bg-gray-800 font-medium scroll-anim" data-anim="middle-out" data-delay="300" href="../contact/index.html">
+  <i class="fa-solid fa-envelope w-6 text-cyan-200 dark:text-cyan-400"></i> Contact
+</a>
+
+<a class="flex items-center px-3 py-2.5 rounded-md bg-cyan-700 dark:bg-gray-800 text-white font-medium border border-cyan-400/30 dark:border-gray-700 scroll-anim" data-anim="fade-up" data-delay="350" href="https://www.it-u.co.za" rel="noopener noreferrer" target="_blank">
+  <i class="fa-solid fa-laptop-code w-6 text-cyan-300 dark:text-cyan-400"></i> Developer Portal
+</a>
+  </div>
+</header>
     <main>
         <article class="project-detail">
             <h1>Cybersecurity Testing Environment</h1>
