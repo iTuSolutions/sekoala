@@ -202,31 +202,38 @@
 
   <!-- Custom Animation Styles -->
   <style>
-    /* Base hidden state */
-    .scroll-anim {
-      opacity: 0;
-      will-change: transform, opacity;
-      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    }
+/* Custom Animation Styles */
+.scroll-anim {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
-    /* Bi-directional Keyframe Definitions */
-    .scroll-anim[data-anim="fade-right"] { transform: translateX(-40px); }
-    .scroll-anim[data-anim="fade-right"].is-visible { transform: translateX(0); opacity: 1; }
+/* Force Navigation items to stay visible and ignore scroll animations */
+nav .scroll-anim,
+header .scroll-anim {
+  opacity: 1 !important;
+  transform: none !important;
+}
 
-    .scroll-anim[data-anim="fade-left"] { transform: translateX(40px); }
-    .scroll-anim[data-anim="fade-left"].is-visible { transform: translateX(0); opacity: 1; }
+/* Bi-directional Keyframe Definitions */
+.scroll-anim[data-anim="fade-right"] { transform: translateX(-40px); }
+.scroll-anim[data-anim="fade-right"].is-visible { transform: translateX(0); opacity: 1; }
 
-    .scroll-anim[data-anim="fade-down"] { transform: translateY(-40px); }
-    .scroll-anim[data-anim="fade-down"].is-visible { transform: translateY(0); opacity: 1; }
+.scroll-anim[data-anim="fade-left"] { transform: translateX(40px); }
+.scroll-anim[data-anim="fade-left"].is-visible { transform: translateX(0); opacity: 1; }
 
-    .scroll-anim[data-anim="fade-up"] { transform: translateY(40px); }
-    .scroll-anim[data-anim="fade-up"].is-visible { transform: translateY(0); opacity: 1; }
+.scroll-anim[data-anim="fade-down"] { transform: translateY(-40px); }
+.scroll-anim[data-anim="fade-down"].is-visible { transform: translateY(0); opacity: 1; }
 
-    .scroll-anim[data-anim="middle-in"] { transform: scale(1.15); }
-    .scroll-anim[data-anim="middle-in"].is-visible { transform: scale(1); opacity: 1; }
+.scroll-anim[data-anim="fade-up"] { transform: translateY(40px); }
+.scroll-anim[data-anim="fade-up"].is-visible { transform: translateY(0); opacity: 1; }
 
-    .scroll-anim[data-anim="middle-out"] { transform: scale(0.85); }
-    .scroll-anim[data-anim="middle-out"].is-visible { transform: scale(1); opacity: 1; }
+.scroll-anim[data-anim="middle-in"] { transform: scale(1.15); }
+.scroll-anim[data-anim="middle-in"].is-visible { transform: scale(1); opacity: 1; }
+
+.scroll-anim[data-anim="middle-out"] { transform: scale(0.85); }
+.scroll-anim[data-anim="middle-out"].is-visible { transform: scale(1); opacity: 1; }
   </style>
 </head>
   
@@ -301,14 +308,14 @@
     <nav class="navigation-menu hidden lg:flex items-center space-x-1" id="navMenu">
       <ul class="flex items-center space-x-1 text-sm font-medium">
 <!-- Navigation Links for Contact Section Pages -->
-<li class="scroll-anim" data-anim="fade-down" data-delay="100">
-  <a class="flex items-center px-3 py-2 rounded-md text-white hover:bg-cyan-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-cyan-400 transition-all" href="../index.html">
+<li>
+  <a class="flex items-center px-3 py-2 rounded-md text-white hover:bg-cyan-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-cyan-400 transition-all" href="index.html">
     <i class="fa-solid fa-house mr-2 text-cyan-200 dark:text-cyan-400"></i> Home
   </a>
 </li>
 
-<li class="scroll-anim" data-anim="fade-down" data-delay="150">
-  <a class="flex items-center px-3 py-2 rounded-md text-white hover:bg-cyan-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-cyan-400 transition-all" href="../resume/index.html">
+<li>
+  <a class="flex items-center px-3 py-2 rounded-md text-white hover:bg-cyan-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-cyan-400 transition-all" href="resume/index.html">
     <i class="fa-solid fa-file-pdf mr-2 text-cyan-200 dark:text-cyan-400"></i> Resume
   </a>
 </li>
