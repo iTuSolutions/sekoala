@@ -285,43 +285,45 @@
 <main>
 
 <!-- About Section -->
-<section class="relative bg-white text-slate-900 bg-fixed bg-cover bg-center transition-colors duration-300 py-20 dark:bg-slate-900 dark:text-slate-100" id="about-section">
+<section class="relative bg-white text-slate-900 bg-fixed bg-cover bg-center transition-colors duration-300 py-12 sm:py-16 lg:py-20 dark:bg-slate-900 dark:text-slate-100" id="about-section">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
     
-    <div class="text-center mb-16">
+    <!-- Section Header -->
+    <div class="text-center mb-10 sm:mb-16">
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight relative pb-4 inline-block scroll-anim" data-anim="fade-down">
         About Me
         <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-24 h-1 bg-blue-600 rounded-full"></span>
       </h2>
     </div>
       
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
       
       <!-- Mission & Vision -->
-      <div class="space-y-8">
+      <div class="space-y-6 sm:space-y-8">
         <h3 class="text-2xl sm:text-3xl font-bold text-center lg:text-left text-slate-800 dark:text-slate-100 scroll-anim" data-anim="fade-up" data-delay="100">
           Our Mission &amp; Vision
         </h3>
             
-        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 p-6 lg:p-8 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl shadow-lg transition-colors duration-300">
+        <!-- Mission & Vision Card (Responsive Flex on Mobile, 2-Col Grid on Desktop) -->
+        <div class="flex flex-col md:grid md:grid-cols-[1fr_auto_1fr] gap-6 p-6 lg:p-8 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl shadow-lg transition-colors duration-300">
           
           <!-- Mission -->
           <div class="space-y-3 scroll-anim" data-anim="fade-right" data-delay="200">
-            <h4 class="text-xl font-bold flex items-center gap-2 text-blue-600 dark:text-blue-400 scroll-anim" data-anim="middle-out" data-delay="300">
-              <i class="fa-solid fa-bullseye"></i> Mission
+            <h4 class="text-xl font-bold flex items-center gap-2 text-blue-600 dark:text-blue-400">
+              <i class="fa-solid fa-bullseye shrink-0"></i> Mission
             </h4>
             <p class="text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
               To deliver reliable, high-integrity, and client-centric IT solutions to the Polokwane community, ensuring swift and sustainable resolution of technical issues.
             </p>
           </div>
           
-          <!-- Divider -->
-          <div class="hidden md:block w-px h-full min-h-[140px] bg-slate-200 dark:bg-slate-700 self-center justify-self-center scroll-anim" data-anim="middle-in" data-delay="350"></div>
+          <!-- Vertical Divider (Desktop) / Horizontal Divider (Mobile) -->
+          <div class="w-full h-px md:w-px md:h-full bg-slate-200 dark:bg-slate-700 self-center scroll-anim" data-anim="middle-in" data-delay="350"></div>
           
           <!-- Vision -->
           <div class="space-y-3 scroll-anim" data-anim="fade-left" data-delay="400">
-            <h4 class="text-xl font-bold flex items-center gap-2 text-blue-600 dark:text-blue-400 scroll-anim" data-anim="middle-out" data-delay="500">
-              <i class="fa-solid fa-eye"></i> Vision
+            <h4 class="text-xl font-bold flex items-center gap-2 text-blue-600 dark:text-blue-400">
+              <i class="fa-solid fa-eye shrink-0"></i> Vision
             </h4>
             <p class="text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
               To be the most trusted and sought-after IT support professional in Limpopo, known for expertise in networking, security, and hardware maintenance.
@@ -331,27 +333,27 @@
         </div>
       </div>
       
-      <!-- Core Values Accordion (Initial state: all closed, exclusive open) -->
+      <!-- Core Values Accordion -->
       <div class="space-y-6 scroll-anim" data-anim="fade-up" data-delay="200" x-data="{ active: null }">
         <h3 class="text-2xl sm:text-3xl font-bold text-center lg:text-left text-slate-800 dark:text-slate-100">
           Core Values
         </h3>
 
-        <div class="space-y-4">
+        <div class="space-y-3 sm:space-y-4">
           
           <!-- Value 1: Integrity & Professionalism -->
           <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 shadow-sm transition-all duration-200">
             <button 
               @click="active = active === 0 ? null : 0" 
-              class="w-full flex items-center justify-between p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
+              class="w-full flex items-center justify-between p-3.5 sm:p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
             >
-              <span class="flex items-center gap-3 text-base sm:text-lg">
-                <i class="fa-solid fa-shield-halved text-blue-600 dark:text-blue-400 w-5 text-center"></i>
-                Integrity &amp; Professionalism
+              <span class="flex items-center gap-2.5 sm:gap-3 text-sm sm:text-base md:text-lg min-w-0 pr-2">
+                <i class="fa-solid fa-shield-halved text-blue-600 dark:text-blue-400 w-5 text-center shrink-0"></i>
+                <span class="truncate">Integrity &amp; Professionalism</span>
               </span>
-              <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300" :class="{ 'rotate-180': active === 0 }"></i>
+              <i class="fa-solid fa-chevron-down text-xs shrink-0 transition-transform duration-300 ml-2" :class="{ 'rotate-180': active === 0 }"></i>
             </button>
-            <div x-show="active === 0" x-collapse x-cloak class="px-4 pb-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200/50 dark:border-slate-700/50 pt-3">
+            <div x-show="active === 0" x-collapse x-cloak class="px-4 pb-4 text-xs sm:text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200/50 dark:border-slate-700/50 pt-3">
               Upholding the highest standards of technical competence, transparency, and honesty in all repairs and recommendations.
             </div>
           </div>
@@ -360,15 +362,15 @@
           <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 shadow-sm transition-all duration-200">
             <button 
               @click="active = active === 1 ? null : 1" 
-              class="w-full flex items-center justify-between p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
+              class="w-full flex items-center justify-between p-3.5 sm:p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
             >
-              <span class="flex items-center gap-3 text-base sm:text-lg">
-                <i class="fa-solid fa-headset text-blue-600 dark:text-blue-400 w-5 text-center"></i>
-                Client-Centric Service
+              <span class="flex items-center gap-2.5 sm:gap-3 text-sm sm:text-base md:text-lg min-w-0 pr-2">
+                <i class="fa-solid fa-headset text-blue-600 dark:text-blue-400 w-5 text-center shrink-0"></i>
+                <span class="truncate">Client-Centric Service</span>
               </span>
-              <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300" :class="{ 'rotate-180': active === 1 }"></i>
+              <i class="fa-solid fa-chevron-down text-xs shrink-0 transition-transform duration-300 ml-2" :class="{ 'rotate-180': active === 1 }"></i>
             </button>
-            <div x-show="active === 1" x-collapse x-cloak class="px-4 pb-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200/50 dark:border-slate-700/50 pt-3">
+            <div x-show="active === 1" x-collapse x-cloak class="px-4 pb-4 text-xs sm:text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200/50 dark:border-slate-700/50 pt-3">
               Focusing on understanding the client's specific needs to deliver personalised, cost-effective, and long-lasting IT solutions.
             </div>
           </div>
@@ -377,15 +379,15 @@
           <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 shadow-sm transition-all duration-200">
             <button 
               @click="active = active === 2 ? null : 2" 
-              class="w-full flex items-center justify-between p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
+              class="w-full flex items-center justify-between p-3.5 sm:p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
             >
-              <span class="flex items-center gap-3 text-base sm:text-lg">
-                <i class="fa-solid fa-chart-line text-blue-600 dark:text-blue-400 w-5 text-center"></i>
-                Continuous Learning
+              <span class="flex items-center gap-2.5 sm:gap-3 text-sm sm:text-base md:text-lg min-w-0 pr-2">
+                <i class="fa-solid fa-chart-line text-blue-600 dark:text-blue-400 w-5 text-center shrink-0"></i>
+                <span class="truncate">Continuous Learning</span>
               </span>
-              <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300" :class="{ 'rotate-180': active === 2 }"></i>
+              <i class="fa-solid fa-chevron-down text-xs shrink-0 transition-transform duration-300 ml-2" :class="{ 'rotate-180': active === 2 }"></i>
             </button>
-            <div x-show="active === 2" x-collapse x-cloak class="px-4 pb-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200/50 dark:border-slate-700/50 pt-3">
+            <div x-show="active === 2" x-collapse x-cloak class="px-4 pb-4 text-xs sm:text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200/50 dark:border-slate-700/50 pt-3">
               Committing to daily professional development to stay ahead of evolving threats and technologies.
             </div>
           </div>
@@ -394,15 +396,15 @@
           <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 shadow-sm transition-all duration-200">
             <button 
               @click="active = active === 3 ? null : 3" 
-              class="w-full flex items-center justify-between p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
+              class="w-full flex items-center justify-between p-3.5 sm:p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
             >
-              <span class="flex items-center gap-3 text-base sm:text-lg">
-                <i class="fa-solid fa-lock text-blue-600 dark:text-blue-400 w-5 text-center"></i>
-                Security First
+              <span class="flex items-center gap-2.5 sm:gap-3 text-sm sm:text-base md:text-lg min-w-0 pr-2">
+                <i class="fa-solid fa-lock text-blue-600 dark:text-blue-400 w-5 text-center shrink-0"></i>
+                <span class="truncate">Security First</span>
               </span>
-              <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300" :class="{ 'rotate-180': active === 3 }"></i>
+              <i class="fa-solid fa-chevron-down text-xs shrink-0 transition-transform duration-300 ml-2" :class="{ 'rotate-180': active === 3 }"></i>
             </button>
-            <div x-show="active === 3" x-collapse x-cloak class="px-4 pb-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200/50 dark:border-slate-700/50 pt-3">
+            <div x-show="active === 3" x-collapse x-cloak class="px-4 pb-4 text-xs sm:text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200/50 dark:border-slate-700/50 pt-3">
               Integrating fundamental cybersecurity practices into every service, from networking to system maintenance.
             </div>
           </div>
@@ -411,15 +413,15 @@
           <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 shadow-sm transition-all duration-200">
             <button 
               @click="active = active === 4 ? null : 4" 
-              class="w-full flex items-center justify-between p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
+              class="w-full flex items-center justify-between p-3.5 sm:p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
             >
-              <span class="flex items-center gap-3 text-base sm:text-lg">
-                <i class="fa-solid fa-location-dot text-blue-600 dark:text-blue-400 w-5 text-center"></i>
-                Local Reliability
+              <span class="flex items-center gap-2.5 sm:gap-3 text-sm sm:text-base md:text-lg min-w-0 pr-2">
+                <i class="fa-solid fa-location-dot text-blue-600 dark:text-blue-400 w-5 text-center shrink-0"></i>
+                <span class="truncate">Local Reliability</span>
               </span>
-              <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300" :class="{ 'rotate-180': active === 4 }"></i>
+              <i class="fa-solid fa-chevron-down text-xs shrink-0 transition-transform duration-300 ml-2" :class="{ 'rotate-180': active === 4 }"></i>
             </button>
-            <div x-show="active === 4" x-collapse x-cloak class="px-4 pb-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200/50 dark:border-slate-700/50 pt-3">
+            <div x-show="active === 4" x-collapse x-cloak class="px-4 pb-4 text-xs sm:text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200/50 dark:border-slate-700/50 pt-3">
               Providing consistent, trustworthy, and accessible IT support to the Polokwane community, ensuring swift resolution times.
             </div>
           </div>
