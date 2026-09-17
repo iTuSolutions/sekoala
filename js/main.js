@@ -605,44 +605,19 @@ function generateCoreValues() {
 
 
 // --- 9. Accordion Handler (Grid Rows Transition) ---
-function initAccordion() {
-  const accordionHeaders = document.querySelectorAll('.accordion-header');
+document.addEventListener('DOMContentLoaded', () => {
+    const detailsElements = document.querySelectorAll('#about-section details');
 
-  accordionHeaders.forEach(header => {
-    // Prevent duplicate event bindings
-    if (header.hasAttribute('data-accordion-bound')) return;
-    header.setAttribute('data-accordion-bound', 'true');
-
-    header.addEventListener('click', () => {
-      const panel = header.nextElementSibling;
-      const icon = header.querySelector('.accordion-icon');
-
-      if (!panel) return;
-
-      const isOpen = header.getAttribute('aria-expanded') === 'true';
-
-      // Close all accordion panels in the same section container
-      const container = header.closest('#core-values-accordion') || header.parentElement.parentElement;
-      if (container) {
-        container.querySelectorAll('.accordion-header').forEach(h => {
-          h.setAttribute('aria-expanded', 'false');
-          const p = h.nextElementSibling;
-          const ic = h.querySelector('.accordion-icon');
-          if (p && p.classList.contains('accordion-panel')) {
-            p.classList.remove('grid-rows-[1fr]');
-            p.classList.add('grid-rows-[0fr]');
-          }
-          if (ic) ic.classList.remove('rotate-180');
-        });
-      }
-
-      // If clicked header was closed, open it
-      if (!isOpen) {
-        header.setAttribute('aria-expanded', 'true');
-        panel.classList.remove('grid-rows-[0fr]');
-        panel.classList.add('grid-rows-[1fr]');
-        if (icon) icon.classList.add('rotate-180');
-      }
+    detailsElements.forEach((targetDetail) => {
+      targetDetail.addEventListener('toggle', () => {
+        // If this item was opened, close all other details in the section
+        if (targetDetail.open) {
+          detailsElements.forEach((detail) => {
+            if (detail !== targetDetail) {
+              detail.removeAttribute('open');
+            }
+          });
+        }
+      });
     });
   });
-}
