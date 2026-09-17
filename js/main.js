@@ -584,3 +584,36 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const animatedElements = document.querySelectorAll('.scroll-anim');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -50px 0px',
+    threshold: 0.15
+  };
+
+  const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Scroll Down: Animate In
+        entry.target.classList.add('is-visible');
+      } else {
+        // Scroll Up / Out of View: Reverse Animation
+        entry.target.classList.remove('is-visible');
+      }
+    });
+  }, observerOptions);
+
+  animatedElements.forEach(el => scrollObserver.observe(el));
+});
+
+
+
+
+
