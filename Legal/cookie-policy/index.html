@@ -3,45 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie Policy | Sekoala Bopape</title>
+    <title>Cookie Policy | Sekoala Bopape &amp; iT-U Company</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body class="bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 transition-colors duration-300">
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 transition-colors duration-300 min-h-screen flex flex-col justify-between">
 
-    <main class="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+    <main class="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8 flex-grow">
+        <!-- Back Navigation -->
         <a href="/" class="inline-flex items-center text-sm font-medium text-cyan-600 dark:text-cyan-400 hover:underline mb-8">
             <i class="fa-solid fa-arrow-left mr-2"></i> Back to Home
         </a>
 
-        <header class="mb-10">
-            <h1 class="text-3xl font-bold text-slate-900 dark:text-white sm:text-4xl">Cookie Policy</h1>
-            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Last Updated: September 2026</p>
+        <!-- Header -->
+        <header class="mb-10 border-b border-slate-200 dark:border-slate-800 pb-6">
+            <h1 class="text-3xl font-bold text-slate-900 dark:text-white sm:text-4xl">Cookie Policy &amp; Storage Settings</h1>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Effective Date: September 2026 | Protection of Personal Information Act (POPIA) Compliant</p>
         </header>
 
+        <!-- Main Content Article -->
         <article class="space-y-8 text-sm leading-relaxed">
+
+            <!-- Section 1 -->
             <section>
-                <h2 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">1. What Are Cookies?</h2>
-                <p>Cookies are small text files stored on your device when you browse websites. They help remember your preferences, keep your session safe, and improve site performance.</p>
+                <h2 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">1. What Are Cookies and Web Storage?</h2>
+                <p class="mb-3">
+                    Cookies are small text files stored directly on your computer or mobile device when you visit web pages. In addition to HTTP cookies, modern web applications utilize <strong>HTML5 LocalStorage</strong> and <strong>SessionStorage</strong> to store user preferences locally in your web browser.
+                </p>
+                <p>
+                    Sekoala Bopape trading as <strong>iT-U Company</strong> utilizes these technologies strictly to ensure high performance, maintain persistent UI settings (such as dark mode preferences), and ensure secure browsing on <a href="https://www.sekoala.co.za" class="text-cyan-600 dark:text-cyan-400 underline">sekoala.co.za</a>.
+                </p>
             </section>
 
+            <!-- Section 2 -->
             <section>
-                <h2 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">2. How We Use Cookies</h2>
-                <p>We use essential cookies and lightweight analytics to:</p>
-                <ul class="list-disc list-inside space-y-1 text-slate-600 dark:text-slate-400">
-                    <li>Remember your preferred theme selection (Light Mode vs. Dark Mode).</li>
-                    <li>Ensure fast loading speeds across zero-hosting serverless architecture.</li>
-                    <li>Gather POPIA-compliant, anonymized visitor statistics to optimize system performance.</li>
+                <h2 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">2. Categories of Storage We Use</h2>
+                <p class="mb-4">We categorize our web storage and cookies into three primary groups:</p>
+                
+                <div class="space-y-4">
+                    <!-- Essential -->
+                    <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+                        <h3 class="font-semibold text-slate-900 dark:text-white flex items-center mb-1">
+                            <i class="fa-solid fa-shield-halved text-cyan-600 dark:text-cyan-400 mr-2"></i> 
+                            1. Strictly Necessary &amp; Security Cookies (Essential)
+                        </h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-400">
+                            These cookies and headers are critical for system security, DDoS protection, cross-site request forgery prevention, and serverless edge delivery routing via CDN networks (e.g., GitHub Pages). They do not collect identifiable personal data and cannot be disabled without breaking basic website functionality.
+                        </p>
+                    </div>
+
+                    <!-- Functional / Preferences -->
+                    <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+                        <h3 class="font-semibold text-slate-900 dark:text-white flex items-center mb-1">
+                            <i class="fa-solid fa-sliders text-cyan-600 dark:text-cyan-400 mr-2"></i> 
+                            2. Preference &amp; Functionality Storage (LocalStorage)
+                        </h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-400">
+                            We use browser LocalStorage to save your chosen color theme preference (Light Mode vs. Cyber Dark Mode). This prevents the page from flickering or resetting every time you navigate to a new section or subdirectory on our platform.
+                        </p>
+                    </div>
+
+                    <!-- Performance / Analytics -->
+                    <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+                        <h3 class="font-semibold text-slate-900 dark:text-white flex items-center mb-1">
+                            <i class="fa-solid fa-chart-line text-cyan-600 dark:text-cyan-400 mr-2"></i> 
+                            3. Privacy-Preserving Analytics (POPIA Compliant)
+                        </h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-400">
+                            We utilize lightweight, anonymized performance counters to measure load times, technical network latency, and popular resource pages. All telemetry data is fully IP-anonymized, stripped of personal tracking vectors, and strictly used to optimize server response times.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section>
+                <h2 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">3. Breakdown of Local Data Saved</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs border-collapse">
+                        <thead>
+                            <tr class="border-b border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white">
+                                <th class="py-2 pr-4 font-semibold">Key / Cookie Name</th>
+                                <th class="py-2 px-4 font-semibold">Type</th>
+                                <th class="py-2 px-4 font-semibold">Purpose</th>
+                                <th class="py-2 pl-4 font-semibold">Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 dark:divide-slate-800">
+                            <tr>
+                                <td class="py-2 pr-4 font-mono text-cyan-600 dark:text-cyan-400">theme</td>
+                                <td class="py-2 px-4">LocalStorage</td>
+                                <td class="py-2 px-4">Stores dark/light theme preference toggle</td>
+                                <td class="py-2 pl-4">Persistent</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 pr-4 font-mono text-cyan-600 dark:text-cyan-400">cookie_consent</td>
+                                <td class="py-2 px-4">Cookie / LocalStorage</td>
+                                <td class="py-2 px-4">Remembers that you acknowledged our POPIA cookies banner</td>
+                                <td class="py-2 pl-4">1 Year</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 pr-4 font-mono text-cyan-600 dark:text-cyan-400">__gh_pages</td>
+                                <td class="py-2 px-4">HTTP Cookie</td>
+                                <td class="py-2 px-4">Static content routing & edge cache distribution</td>
+                                <td class="py-2 pl-4">Session</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section>
+                <h2 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">4. Third-Party Scripts &amp; Asset Libraries</h2>
+                <p class="mb-3">
+                    Our platform integrates fast, CDN-delivered libraries for styling and vector iconography (such as FontAwesome and Tailwind CSS CDN). These delivery networks may process basic HTTP request headers (like your IP address and browser User-Agent) solely to deliver stylesheet files securely and quickly.
+                </p>
+            </section>
+
+            <!-- Section 5 -->
+            <section>
+                <h2 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">5. How to Disable or Manage Cookies</h2>
+                <p class="mb-3">
+                    You have complete control over cookies and browser storage. You can configure your browser to block cookies, clear cache memory, or alert you when cookies are sent:
+                </p>
+                <ul class="list-disc list-inside space-y-1.5 text-slate-600 dark:text-slate-400 pl-2">
+                    <li><strong>Google Chrome:</strong> Settings $\rightarrow$ Privacy and security $\rightarrow$ Third-party cookies.</li>
+                    <li><strong>Mozilla Firefox:</strong> Options $\rightarrow$ Privacy &amp; Security $\rightarrow$ Cookies and Site Data.</li>
+                    <li><strong>Microsoft Edge:</strong> Settings $\rightarrow$ Cookies and site permissions.</li>
+                    <li><strong>Apple Safari:</strong> Preferences $\rightarrow$ Privacy $\rightarrow$ Block all cookies.</li>
                 </ul>
+                <div class="mt-4 bg-slate-100 dark:bg-slate-800/60 p-4 rounded-lg border border-slate-200 dark:border-slate-700/60 text-xs">
+                    <p><strong>Note:</strong> Clearing your browser's LocalStorage will reset your site preferences, meaning the dark mode theme will revert to your system default upon your next visit.</p>
+                </div>
             </section>
 
+            <!-- Section 6 -->
             <section>
-                <h2 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">3. Managing Cookie Settings</h2>
-                <p>You can disable or delete cookies at any time through your web browser's security settings. Please note that disabling essential cookies may impact dark theme persistence and performance optimizations.</p>
+                <h2 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">6. Questions &amp; Contact Information</h2>
+                <p class="mb-3">For any queries regarding our Cookie Policy or POPIA compliance practices, please contact us:</p>
+                <div class="bg-slate-100 dark:bg-slate-800/60 p-4 rounded-lg border border-slate-200 dark:border-slate-700/60 text-xs space-y-1">
+                    <p><strong>Business Name:</strong> iT-U Company</p>
+                    <p><strong>Information Officer:</strong> Sekoala Daniel Bopape</p>
+                    <p><strong>Email:</strong> <a href="mailto:sekoalabopape@gmail.com" class="text-cyan-600 dark:text-cyan-400 underline">sekoalabopape@gmail.com</a></p>
+                    <p><strong>Phone:</strong> 071 140-5870</p>
+                    <p><strong>Location:</strong> Ga-Mothiba, Nobody, Polokwane, Limpopo, South Africa</p>
+                </div>
             </section>
+
         </article>
     </main>
+
+    <!-- Footer Block -->
+    <footer class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <!-- ROW 3: Legal, POPIA Compliance & Cookies Policy Bar -->
+        <div class="border-t border-slate-200 dark:border-slate-800 py-6 my-2 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-600 dark:text-slate-400 scroll-anim" data-anim="fade-up" data-delay="200">
+            <div class="flex items-center space-x-2 scroll-anim" data-anim="fade-right" data-delay="250">
+                <i class="fa-solid fa-cookie-bite text-cyan-600 dark:text-cyan-400 text-sm"></i>
+                <span>We use essential cookies &amp; POPIA compliant analytics to ensure optimum site speed and security.</span>
+            </div>
+            
+            <ul class="flex flex-wrap items-center space-x-6 font-medium">
+                <li class="scroll-anim" data-anim="fade-left" data-delay="300">
+                    <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition flex items-center space-x-1.5" href="/legal/privacy-policy/">
+                        <i class="fa-solid fa-shield-halved text-[10px]"></i>
+                        <span>Privacy Policy (POPIA)</span>
+                    </a>
+                </li>
+                <li class="scroll-anim" data-anim="fade-left" data-delay="350">
+                    <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition flex items-center space-x-1.5" href="/legal/terms-of-service/">
+                        <i class="fa-solid fa-file-contract text-[10px]"></i>
+                        <span>Terms of Service</span>
+                    </a>
+                </li>
+                <li class="scroll-anim" data-anim="fade-left" data-delay="400">
+                    <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition flex items-center space-x-1.5" href="/legal/cookie-policy/">
+                        <i class="fa-solid fa-cookie text-[10px]"></i>
+                        <span>Cookie Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="/js/main.js"></script>
 </body>
