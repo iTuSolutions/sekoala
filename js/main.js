@@ -600,12 +600,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const scrollObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
+      const el = entry.target;
+      const delay = el.getAttribute('data-delay') || 0;
+
       if (entry.isIntersecting) {
-        // Scroll Down: Animate In
-        entry.target.classList.add('is-visible');
+        // Scroll Down: Animate in with delay
+        setTimeout(() => {
+          el.classList.add('is-visible');
+        }, parseInt(delay, 10));
       } else {
-        // Scroll Up / Out of View: Reverse Animation
-        entry.target.classList.remove('is-visible');
+        // Scroll Up / Out of View: Reverse animation immediately
+        el.classList.remove('is-visible');
       }
     });
   }, observerOptions);
