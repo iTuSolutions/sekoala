@@ -281,7 +281,9 @@
 </header>
 
 
-    <main>
+<!-- Main Container with Responsive Top Margin to Clear Fixed Header -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-36 mb-12 sm:mb-16 lg:mb-20">
+
 <!-- CompTIA Network+ Certificate Detail Container -->
 <section class="max-w-6xl mx-auto px-4 py-8 space-y-8 text-gray-800 dark:text-gray-200">
 
@@ -300,8 +302,47 @@
     </div>
   </div>
 
+  <!-- Overview & Key Skills (2-Column Layout on Desktop) -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    
+    <!-- Overview Block -->
+    <div class="bg-white dark:bg-gray-800/80 p-6 rounded-xl border border-gray-200 dark:border-gray-700/60 shadow-sm scroll-anim" data-anim="fade-right" data-delay="150">
+      <h2 class="text-lg font-bold text-cyan-900 dark:text-cyan-400 flex items-center gap-2 border-b border-gray-100 dark:border-gray-700 pb-3 mb-4">
+        <i class="fa-solid fa-circle-info text-cyan-600 dark:text-cyan-400"></i> Overview
+      </h2>
+      <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+        Validates the essential knowledge and skills needed to design, configure, manage, and troubleshoot wired and wireless enterprise networks.
+      </p>
+    </div>
+
+    <!-- Key Skills Block -->
+    <div class="bg-white dark:bg-gray-800/80 p-6 rounded-xl border border-gray-200 dark:border-gray-700/60 shadow-sm scroll-anim" data-anim="fade-left" data-delay="200">
+      <h2 class="text-lg font-bold text-cyan-900 dark:text-cyan-400 flex items-center gap-2 border-b border-gray-100 dark:border-gray-700 pb-3 mb-4">
+        <i class="fa-solid fa-sliders text-cyan-600 dark:text-cyan-400"></i> Key Competencies
+      </h2>
+      <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+        <li class="flex items-start gap-2">
+          <i class="fa-solid fa-check text-cyan-600 dark:text-cyan-400 mt-1 shrink-0"></i>
+          <span>Network Architecture & IP Addressing</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <i class="fa-solid fa-check text-cyan-600 dark:text-cyan-400 mt-1 shrink-0"></i>
+          <span>Routing Protocols & Switching Operations</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <i class="fa-solid fa-check text-cyan-600 dark:text-cyan-400 mt-1 shrink-0"></i>
+          <span>Network Security, Hardening & Mitigation</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <i class="fa-solid fa-check text-cyan-600 dark:text-cyan-400 mt-1 shrink-0"></i>
+          <span>Infrastructure Troubleshooting & Diagnostics</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <!-- Course Modules Grid (2-Column Layout) -->
-  <div class="bg-white dark:bg-gray-800/80 p-6 md:p-8 rounded-xl border border-gray-200 dark:border-gray-700/60 shadow-sm scroll-anim" data-anim="fade-up" data-delay="200">
+  <div class="bg-white dark:bg-gray-800/80 p-6 md:p-8 rounded-xl border border-gray-200 dark:border-gray-700/60 shadow-sm scroll-anim" data-anim="fade-up" data-delay="250">
     <h2 class="text-xl font-bold text-cyan-900 dark:text-cyan-400 flex items-center gap-2 border-b border-gray-200 dark:border-gray-700 pb-4 mb-6">
       <i class="fa-solid fa-book-open text-cyan-600 dark:text-cyan-400"></i> Course Modules & Topics
     </h2>
@@ -380,7 +421,7 @@
   </div>
 
 </section>
-    </main>
+</main>
 
     <!-- SECTION: Footer with Copilot & Code Branding -->
 <footer class="site-footer max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-cyan-500/30 dark:border-gray-800 text-gray-600 dark:text-gray-400 text-sm transition-colors duration-300 scroll-anim" data-anim="fade-down" id="site-footer-section">
