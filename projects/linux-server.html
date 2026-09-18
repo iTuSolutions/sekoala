@@ -322,120 +322,155 @@
     </div>
   </header>
 
-  <!-- Main Body Content -->
-  <div class="space-y-10 text-gray-700 dark:text-gray-300 leading-relaxed">
+  <article class="mx-auto max-w-4xl space-y-8 text-sm text-slate-700 dark:text-slate-300 relative">
 
-    <!-- Section 1: Overview & Objectives -->
-    <section>
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 flex items-center">
-        <i class="fa-solid fa-bullseye text-cyan-500 mr-2.5 text-lg"></i> Executive Overview &amp; Objectives
-      </h2>
-      <p class="mb-4">
-        Default Linux server installations often ship with open ports, permissive authentication options, and unmonitored baseline services. This project outlines the systematic transformation of a stock Linux distribution into a hardened, production-grade server capable of hosting sensitive web applications while resisting automated brute-force attacks and unauthorized access attempts.
-      </p>
-      <ul class="list-disc pl-6 space-y-2">
-        <li>Eliminate single-point password vulnerability by enforcing key-based SSH authentication.</li>
-        <li>Implement a least-privilege network entry strategy using Uncomplicated Firewall (UFW).</li>
-        <li>Deploy automated intrusion prevention mechanics to detect and jail malicious traffic.</li>
-        <li>Configure Nginx as a reverse proxy with TLS 1.3 encryption and security headers.</li>
-      </ul>
+    <!-- Decorative Organic Background Shapes -->
+    <div class="absolute -top-10 -left-10 w-72 h-72 bg-cyan-500/10 dark:bg-cyan-500/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-1/2 -right-10 w-80 h-80 bg-blue-600/10 dark:bg-blue-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Header Summary Section -->
+    <header class="relative border-b border-slate-200 dark:border-slate-800 pb-6 overflow-hidden">
+        <div class="flex items-center gap-3 mb-2">
+            <div class="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 shadow-inner">
+                <i class="fa-brands fa-linux text-xl"></i>
+            </div>
+            <h1 class="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">
+                Linux Server Hardening &amp; Administration
+            </h1>
+        </div>
+        <p class="text-xs font-semibold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider pl-12">
+            Scope: Ubuntu/Debian, SSH Key Authentication, UFW Firewall, Fail2ban &amp; Web Services
+        </p>
+    </header>
+
+    <!-- Project Overview Paragraph -->
+    <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-circle-info text-cyan-500"></i> Deployment Overview
+        </h2>
+        <p class="leading-relaxed">
+            Deployed and hardened self-hosted Linux server instances designed for enterprise web hosting and secure administrative access. The configuration enforces strict attack-surface reduction by disabling root login, replacing password-based access with RSA 4096-bit SSH keys, establishing stateful UFW firewall boundaries, and isolating reverse-proxy web services behind encrypted network layers.
+        </p>
     </section>
 
-    <!-- Section 2: Technical Hardening Implementation -->
-    <section>
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
-        <i class="fa-solid fa-shield-halved text-cyan-500 mr-2.5 text-lg"></i> Technical Implementation &amp; Security Controls
-      </h2>
+    <!-- Source Infrastructure Preview Card (Image & Diagram Slot) -->
+    <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-image text-cyan-500"></i> Server Architecture &amp; Source Diagram
+        </h2>
+        
+        <div class="relative group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-900/90 shadow-lg">
+            <!-- Organic Wave Divider Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent z-10 pointer-events-none"></div>
+            
+            <!-- Source Image Placeholder / Reference Diagram -->
+            <img 
+                src="https://picsum.photos/1200/600?tech,server" 
+                alt="Linux Server Security Architecture Diagram" 
+                class="w-full h-56 sm:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-80"
+            />
 
-      <div class="space-y-6">
-        <!-- Control 1 -->
-        <div class="bg-gray-50 dark:bg-gray-900/60 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-          <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 flex items-center">
-            1. SSH Daemon Hardening (<code class="text-xs bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-cyan-600 dark:text-cyan-400">sshd_config</code>)
-          </h3>
-          <p class="text-sm mb-3">
-            Disabled password authentication completely in favor of 4096-bit RSA or ED25519 keypairs. Re-routed standard SSH ports, blocked direct root logins, and configured strict session timeouts.
-          </p>
-          <div class="bg-gray-900 text-gray-100 rounded-lg p-4 font-mono text-xs overflow-x-auto leading-normal">
-<span class="text-gray-500"># /etc/ssh/sshd_config security baseline</span>
-PermitRootLogin no
-PasswordAuthentication no
-PubkeyAuthentication yes
-MaxAuthTries 3
-ClientAliveInterval 300
-ClientAliveCountMax 2
-X11Forwarding no
-          </div>
+            <!-- Card Floating Overlay Badge & Details -->
+            <div class="absolute bottom-0 left-0 right-0 p-5 z-20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div>
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 backdrop-blur-md mb-1">
+                        <i class="fa-solid fa-diagram-project text-[10px]"></i> Production Blueprint
+                    </span>
+                    <h3 class="text-white font-semibold text-base">Hardened Edge &amp; Service Isolation Layer</h3>
+                </div>
+                <span class="text-xs text-slate-300 flex items-center gap-1.5 font-mono">
+                    <i class="fa-solid fa-shield-cat text-cyan-400"></i> UFW + Fail2ban Active
+                </span>
+            </div>
         </div>
-
-        <!-- Control 2 -->
-        <div class="bg-gray-50 dark:bg-gray-900/60 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-          <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 flex items-center">
-            2. Perimeter Control &amp; Intrusion Prevention (UFW + Fail2ban)
-          </h3>
-          <p class="text-sm mb-3">
-            Enforced a strict "default-deny" incoming policy. Allowed only explicit inbound ports (HTTP/HTTPS and custom management ports) and paired UFW with Fail2ban to monitor log files for brute-force signatures.
-          </p>
-          <div class="bg-gray-900 text-gray-100 rounded-lg p-4 font-mono text-xs overflow-x-auto leading-normal">
-<span class="text-gray-500"># UFW Firewall Setup</span>
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-sudo ufw allow 22/tcp
-sudo ufw enable
-          </div>
-        </div>
-
-        <!-- Control 3 -->
-        <div class="bg-gray-50 dark:bg-gray-900/60 rounded-xl p-5 border border-gray-200 dark:border-gray-700">
-          <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">
-            3. Web Service Proxying &amp; SSL/TLS Hardening
-          </h3>
-          <p class="text-sm">
-            Configured Nginx as a hardened reverse proxy with Let's Encrypt TLS certificates. Enforced HTTP Strict Transport Security (HSTS), X-Frame-Options, and disabled legacy SSLv3/TLS 1.0/1.1 protocols.
-          </p>
-        </div>
-      </div>
     </section>
 
-    <!-- Section 3: Monitoring & Maintenance -->
-    <section>
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 flex items-center">
-        <i class="fa-solid fa-chart-line text-cyan-500 mr-2.5 text-lg"></i> System Monitoring &amp; Log Auditing
-      </h2>
-      <p class="mb-4">
-        To maintain operational awareness, system health indicators and security events are aggregated and monitored:
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="border border-gray-200 dark:border-gray-700 p-4 rounded-xl">
-          <h4 class="font-bold text-gray-900 dark:text-white text-sm mb-1">Journald &amp; Logrotate</h4>
-          <p class="text-xs text-gray-600 dark:text-gray-400">
-            Centralized log filtering with structured queries using <code class="bg-gray-100 dark:bg-gray-800 px-1 rounded">journalctl</code> and automated log compression/rotation policies to prevent disk space exhaustion.
-          </p>
+    <!-- Technical Hardening Pillars -->
+    <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-layer-group text-cyan-500"></i> Core Security &amp; Administration Pillars
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            <!-- Pillar 1: Access Security -->
+            <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                <!-- Organic Background Accent Blob -->
+                <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-cyan-500/10 rounded-full blur-xl pointer-events-none"></div>
+                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-key text-cyan-500"></i> Cryptographic Access Controls
+                </h3>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Enforced public key-based SSH authentication while explicitly disabling password authentication and root user SSH access. Custom port bindings and strict cipher suites mitigate automated brute-force attempts.
+                </p>
+            </div>
+
+            <!-- Pillar 2: Firewall & Perimeter -->
+            <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-blue-500/10 rounded-full blur-xl pointer-events-none"></div>
+                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-fire-burner text-cyan-500"></i> Stateful Firewall &amp; Rate Limiting
+                </h3>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Configured UFW firewall policies adhering to default-deny inbound rules. Integrated Fail2ban log monitoring to dynamically block malicious IP addresses triggering repeated connection failures.
+                </p>
+            </div>
+
+            <!-- Pillar 3: Web Reverse Proxy -->
+            <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-teal-500/10 rounded-full blur-xl pointer-events-none"></div>
+                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-globe text-cyan-500"></i> Nginx Web Services &amp; TLS
+                </h3>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Deployed Nginx as an optimized reverse proxy handling HTTP-to-HTTPS redirection, Let's Encrypt TLS certificate auto-renewals, and HTTP security header hardening (HSTS, CSP, X-Frame-Options).
+                </p>
+            </div>
+
+            <!-- Pillar 4: Service Monitoring -->
+            <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-emerald-500/10 rounded-full blur-xl pointer-events-none"></div>
+                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-chart-pie text-cyan-500"></i> Systemd &amp; Resource Auditing
+                </h3>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Configured automated systemd service recovery daemons, centralized journalctl logging, and disk usage alerting to maintain operational availability and system health.
+                </p>
+            </div>
+
         </div>
-        <div class="border border-gray-200 dark:border-gray-700 p-4 rounded-xl">
-          <h4 class="font-bold text-gray-900 dark:text-white text-sm mb-1">Automated Security Updates</h4>
-          <p class="text-xs text-gray-600 dark:text-gray-400">
-            Configured <code class="bg-gray-100 dark:bg-gray-800 px-1 rounded">unattended-upgrades</code> to automatically apply critical Linux security patches without administrative delay.
-          </p>
-        </div>
-      </div>
     </section>
 
-    <!-- Section 4: Key Outcome & Verification -->
-    <section class="bg-cyan-50 dark:bg-cyan-950/30 border border-cyan-200 dark:border-cyan-800/50 p-6 rounded-2xl">
-      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-2 flex items-center">
-        <i class="fa-solid fa-circle-check text-cyan-600 dark:text-cyan-400 mr-2"></i> Verification &amp; Security Outcomes
-      </h2>
-      <ul class="list-disc pl-5 text-sm space-y-1.5 text-gray-700 dark:text-gray-300">
-        <li>Achieved <strong>A+ SSL Rating</strong> on SSL Labs evaluation.</li>
-        <li>Successfully blocked 100% of unauthenticated brute-force attempts via SSH during testing phase.</li>
-        <li>Maintained 99.9% uptime for self-hosted web services with automated service recovery scripts via <code class="bg-cyan-100 dark:bg-cyan-900/60 px-1 rounded">systemd</code>.</li>
-      </ul>
+    <!-- Organic Highlight Metrics Bar -->
+    <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-square-poll-vertical text-cyan-500"></i> Security Benchmarks &amp; Results
+        </h2>
+        
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">4096-bit</span>
+                <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">RSA Key Encrypted</span>
+            </div>
+            
+            <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">Default-Deny</span>
+                <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Firewall Policy</span>
+            </div>
+
+            <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">TLS 1.3</span>
+                <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Encrypted Web Edge</span>
+            </div>
+
+            <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">Fail2ban</span>
+                <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Active Intrusion Defense</span>
+            </div>
+        </div>
     </section>
 
-  </div>
+</article>
 
   <!-- Footer Actions -->
   <footer class="mt-10 pt-6 border-t border-gray-200 dark:border-gray-700 flex flex-wrap items-center justify-between gap-4">
