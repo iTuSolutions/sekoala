@@ -624,3 +624,91 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+// --- Cookie Consent Module ---
+document.addEventListener('DOMContentLoaded', () => {
+  const cookieBanner = document.getElementById('cookie-banner');
+  const acceptBtn = document.getElementById('cookie-accept');
+  const rejectBtn = document.getElementById('cookie-reject');
+
+  // Check if user has already made a choice
+  const consent = localStorage.getItem('sekoala_cookie_consent');
+
+  if (!consent) {
+    // Show banner with a small delay for a smooth entrance
+    setTimeout(() => {
+      cookieBanner.classList.remove('hidden');
+      // Trigger slide-up animation
+      setTimeout(() => {
+        cookieBanner.classList.remove('translate-y-full');
+      }, 50);
+    }, 1000);
+  }
+
+  // Handle Accept
+  acceptBtn.addEventListener('click', () => {
+    localStorage.setItem('sekoala_cookie_consent', 'accepted');
+    hideBanner();
+    // Enable tracking scripts dynamically if needed here
+  });
+
+  // Handle Reject / Decline
+  rejectBtn.addEventListener('click', () => {
+    localStorage.setItem('sekoala_cookie_consent', 'declined');
+    hideBanner();
+    // Optional: disable non-essential trackers here
+  });
+
+  function hideBanner() {
+    cookieBanner.classList.add('translate-y-full');
+    setTimeout(() => {
+      cookieBanner.classList.add('hidden');
+    }, 500); // Matches transition duration
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
