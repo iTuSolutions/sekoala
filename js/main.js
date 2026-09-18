@@ -388,7 +388,7 @@ function initScrollAnimations() {
     threshold: 0.15
   };
 
-  const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver((entries, observerInstance) => {
     entries.forEach((entry) => {
       const el = entry.target;
       const delay = el.getAttribute("data-delay") || 0;
@@ -397,9 +397,9 @@ function initScrollAnimations() {
         setTimeout(() => {
           el.classList.add("is-visible");
         }, delay);
-      } else {
-        // Removes class on exit to trigger reverse animation up/down scroll
-        el.classList.remove("is-visible");
+        
+        // Stop observing once animated so it stays visible and doesn't re-hide on scroll up
+        observerInstance.unobserve(el);
       }
     });
   }, observerOptions);
@@ -407,6 +407,8 @@ function initScrollAnimations() {
   document.querySelectorAll(".scroll-anim").forEach((el) => observer.observe(el));
 }
 
+// Initialize on DOM load
+document.addEventListener("DOMContentLoaded", initScrollAnimations);
 
 // --- 7. EmailJS Handling ---
 function initEmailJS() {
