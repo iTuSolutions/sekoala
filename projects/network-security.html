@@ -279,11 +279,149 @@
 </header>
 
     <main>
-        <article class="project-detail">
-            <h1>Network Security & Access Control</h1>
-            <p><strong>Scope:</strong> ACLs, VPN Tunnels, Firewall Rules</p>
-            <p>Implemented secure access policies, encrypted site-to-site VPN tunnels, and strict ACL filtering to restrict unauthorized network access.</p>
-        </article>
+<article class="mx-auto max-w-4xl space-y-8 text-sm text-slate-700 dark:text-slate-300 relative">
+
+    <!-- Organic Background Accent Blobs -->
+    <div class="absolute -top-12 -right-10 w-72 h-72 bg-cyan-500/10 dark:bg-cyan-500/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-1/2 -left-12 w-80 h-80 bg-blue-600/10 dark:bg-blue-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Header Summary Section -->
+    <header class="relative border-b border-slate-200 dark:border-slate-800 pb-6 overflow-hidden">
+        <div class="flex items-center gap-3 mb-2">
+            <div class="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 shadow-inner">
+                <i class="fa-solid fa-shield-halved text-xl"></i>
+            </div>
+            <h1 class="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">
+                Network Security &amp; Access Control Architecture
+            </h1>
+        </div>
+        <p class="text-xs font-semibold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider pl-12">
+            Scope: Extended ACLs, IPSec Site-to-Site VPN, Stateful Firewalls, &amp; Zero-Trust Access Rules
+        </p>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-circle-info text-cyan-500"></i> Architecture Overview
+        </h2>
+        <p class="leading-relaxed">
+            Architected an enterprise perimeter defense system focusing on strict access control enforcement, encrypted inter-site transit, and stateful traffic filtering. By combining granular Extended Access Control Lists (ACLs) with hardware-accelerated IPSec VPN tunnels and stateful firewall inspection, the deployment eliminates unauthorized lateral movement while securing sensitive data in transit between remote branch offices and core data centers.
+        </p>
+    </section>
+
+    <!-- Visual Reference Section: Source Diagram Preview -->
+    <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-network-wired text-cyan-500"></i> Perimeter Security &amp; VPN Topology
+        </h2>
+        
+        <div class="relative group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-900/90 shadow-lg">
+            <!-- Source Architecture Diagram -->
+            <div class="p-4 bg-white dark:bg-slate-950 flex items-center justify-center">
+                <Image src="image_agent_tag_13959497599987544501" alt="Site to Site Virtual Private Network Architecture Topology Diagram" caption="Site-to-Site Encrypted VPN Gateway Topology" />
+            </div>
+
+            <!-- Card Floating Overlay Badge & Metadata -->
+            <div class="p-4 border-t border-slate-200 dark:border-slate-800/80 bg-slate-900/95 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div>
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 backdrop-blur-md mb-1">
+                        <i class="fa-solid fa-lock text-[10px]"></i> IPSec / AES-256 Encrypted
+                    </span>
+                    <h3 class="text-white font-semibold text-sm">Site-to-Site &amp; Remote Access Secure Tunneling</h3>
+                </div>
+                <span class="text-xs text-slate-300 flex items-center gap-1.5 font-mono">
+                    <i class="fa-solid fa-shield-cat text-cyan-400"></i> Zero-Trust Ingress Filter
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Security Pillars -->
+    <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-layer-group text-cyan-500"></i> Key Security Capabilities &amp; Control Mechanisms
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            <!-- Pillar 1: Access Control Lists -->
+            <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-cyan-500/10 rounded-full blur-xl pointer-events-none"></div>
+                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-filter text-cyan-500"></i> Granular Extended ACL Filtering
+                </h3>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Designed layer-3 and layer-4 Extended Access Control Lists to enforce strict protocol, port, and IP filtering rules. Restricted inter-VLAN routing paths between production servers, guest zones, and administrative management interfaces.
+                </p>
+            </div>
+
+            <!-- Pillar 2: Encrypted VPN Tunnels -->
+            <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-blue-500/10 rounded-full blur-xl pointer-events-none"></div>
+                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-key-skeleton text-cyan-500"></i> IPSec Site-to-Site VPN Tunnels
+                </h3>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Configured secure IPSec tunnels using IKEv2 proposal parameters, AES-256 encryption, and SHA-512 integrity verification. Established persistent site-to-site connectivity for safe cross-office database synchronization.
+                </p>
+            </div>
+
+            <!-- Pillar 3: Stateful Firewall Inspection -->
+            <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-teal-500/10 rounded-full blur-xl pointer-events-none"></div>
+                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-fire-burner text-cyan-500"></i> Stateful Inspection &amp; NAT/PAT
+                </h3>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Deployed stateful packet inspection rules to track active connection states across perimeter gateways. Configured Dynamic NAT with overload (PAT) to obscure internal subnet topologies from external internet probes.
+                </p>
+            </div>
+
+            <!-- Pillar 4: Zero-Trust Network Access -->
+            <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-emerald-500/10 rounded-full blur-xl pointer-events-none"></div>
+                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-user-lock text-cyan-500"></i> Zero-Trust Ingress Controls
+                </h3>
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Enforced least-privilege access rules across administrative consoles. Implemented port security MAC-address locking and anti-spoofing unicast reverse path forwarding (uRPF) to safeguard network entry points.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Key Technical Metrics -->
+    <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-square-poll-vertical text-cyan-500"></i> Security Benchmarks &amp; System Highlights
+        </h2>
+        
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">AES-256</span>
+                <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">IPSec VPN Encryption</span>
+            </div>
+            
+            <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">L3 / L4</span>
+                <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Extended ACL Filtering</span>
+            </div>
+
+            <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">IKEv2</span>
+                <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Secure Key Exchange</span>
+            </div>
+
+            <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">100%</span>
+                <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Stateful Packet Inspection</span>
+            </div>
+        </div>
+    </section>
+
+</article>
     </main>
 
     <footer>
