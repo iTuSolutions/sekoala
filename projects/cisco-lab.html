@@ -279,133 +279,175 @@
   </div>
 </header>
 
-    <main>
-<article class="mx-auto max-w-4xl space-y-6 text-sm text-slate-700 dark:text-slate-300">
-    <!-- Header Summary -->
-    <header class="border-b border-slate-200 dark:border-slate-800 pb-4">
-        <h1 class="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl flex items-center gap-2">
-            <i class="fa-solid fa-network-wired text-cyan-500"></i> Enterprise Cisco Lab &amp; Infrastructure Engineering
-        </h1>
-        <p class="text-xs font-semibold text-cyan-600 dark:text-cyan-400 mt-1 uppercase tracking-wider">
-            Scope: Multi-VLAN Architecture, OSPF Dynamic Routing, Trunking &amp; Infrastructure Security
-        </p>
-    </header>
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-12 sm:my-16 lg:my-20">
+    <article class="space-y-8 text-sm text-slate-700 dark:text-slate-300 relative">
 
-    <!-- Overview Section -->
-    <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
-            <i class="fa-solid fa-circle-info text-cyan-500"></i> Project Overview
-        </h2>
-        <p class="leading-relaxed">
-            Designed, configured, and validated a multi-tier enterprise network topology utilizing Cisco routers and Layer 2/Layer 3 switches. The lab environment simulates a scalable branch-to-core infrastructure featuring segmented departmental VLANs, resilient inter-VLAN routing, dynamic OSPF routing, and hardened network edge security.
-        </p>
-    </section>
+        <!-- Organic Background Accent Blobs -->
+        <div class="absolute -top-12 -left-10 w-72 h-72 bg-cyan-500/10 dark:bg-cyan-500/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+        <div class="absolute top-1/2 -right-12 w-80 h-80 bg-blue-600/10 dark:bg-blue-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
-    <!-- Technical Architecture & Specs -->
-    <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
-            <i class="fa-solid fa-layer-group text-cyan-500"></i> Core Network Architecture &amp; Implementation
-        </h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <li class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
-                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center mb-1">
-                    <i class="fa-solid fa-sitemap text-cyan-500 mr-2"></i> VLAN Segmentation &amp; Trunking
-                </h3>
-                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                    Configured departmental VLANs (Management, Data, VoIP, and Guest) on Layer 2 switches. Implemented 802.1Q trunking with custom Native VLAN mapping and active DTP disabling for security.
-                </p>
-            </li>
-
-            <li class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
-                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center mb-1">
-                    <i class="fa-solid fa-route text-cyan-500 mr-2"></i> Inter-VLAN Routing &amp; L3 Switching
-                </h3>
-                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                    Deployed Router-on-a-Stick (ROAS) sub-interfaces on Cisco routers and configured Switched Virtual Interfaces (SVIs) on Layer 3 switches for high-throughput inter-departmental packet routing.
-                </p>
-            </li>
-
-            <li class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
-                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center mb-1">
-                    <i class="fa-solid fa-diagram-project text-cyan-500 mr-2"></i> OSPF Dynamic Routing
-                </h3>
-                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                    Implemented Single-Area OSPF (Area 0) across core routers. Configured passive interfaces to prevent unauthorized routing updates on client-facing subnets and calibrated link metrics.
-                </p>
-            </li>
-
-            <li class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
-                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center mb-1">
-                    <i class="fa-solid fa-lock text-cyan-500 mr-2"></i> Security Hardening &amp; NAT
-                </h3>
-                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                    Configured Port Security (Sticky MAC limits), SSH access (RSA 2048-bit keys), Access Control Lists (Extended ACLs), and Dynamic NAT/PAT for secure edge internet gateway connectivity.
-                </p>
-            </li>
-        </ul>
-    </section>
-
-    <!-- Replacement Section: Professional Network Operations & Security Control Protocols -->
-    <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
-            <i class="fa-solid fa-shield-halved text-cyan-500"></i> Infrastructure Operations &amp; Verification Protocols
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2">
-                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center">
-                    <i class="fa-solid fa-wave-square text-cyan-500 mr-2"></i> Dynamic Adjacency Validation
-                </h3>
-                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                    Monitored link-state database updates and verified peer neighbor states across core nodes to maintain route convergence and low-latency failover resilience.
-                </p>
+        <!-- Header Summary -->
+        <header class="relative border-b border-slate-200 dark:border-slate-800 pb-6 overflow-hidden">
+            <div class="flex items-center gap-3 mb-2">
+                <div class="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 shadow-inner">
+                    <i class="fa-solid fa-network-wired text-xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">
+                    Enterprise Cisco Lab &amp; Infrastructure Engineering
+                </h1>
             </div>
+            <p class="text-xs font-semibold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider pl-12">
+                Scope: Multi-VLAN Architecture, OSPF Dynamic Routing, Trunking &amp; Infrastructure Security
+            </p>
+        </header>
 
-            <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2">
-                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center">
-                    <i class="fa-solid fa-sliders text-cyan-500 mr-2"></i> Traffic Segmentation Auditing
-                </h3>
-                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                    Audited 802.1Q encapsulation frames and trunk connection health to ensure strict logical isolation across administrative and operational subnets.
-                </p>
-            </div>
+        <!-- Overview Section -->
+        <section class="space-y-3">
+            <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-circle-info text-cyan-500"></i> Project Overview
+            </h2>
+            <p class="leading-relaxed">
+                Designed, configured, and validated a multi-tier enterprise network topology utilizing Cisco routers and Layer 2/Layer 3 switches. The lab environment simulates a scalable branch-to-core infrastructure featuring segmented departmental VLANs, resilient inter-VLAN routing, dynamic OSPF routing, and hardened network edge security.
+            </p>
+        </section>
 
-            <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2">
-                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center">
-                    <i class="fa-solid fa-user-shield text-cyan-500 mr-2"></i> Edge Access Safeguards
-                </h3>
-                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                    Enforced encrypted remote access protocols, restricted management console permissions, and applied interface-level MAC security controls.
-                </p>
-            </div>
-        </div>
-    </section>
+        <!-- Visual Source & Infrastructure Topology Preview -->
+        <section class="space-y-3">
+            <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-diagram-project text-cyan-500"></i> Cisco Lab Topology &amp; Source Architecture
+            </h2>
+            
+            <div class="relative group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-900/90 shadow-lg">
+                <img 
+                    src="https://picsum.photos/1200/600?network,cisco,switch" 
+                    alt="Enterprise Cisco Multi-VLAN and OSPF Network Topology Diagram" 
+                    class="w-full h-56 sm:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-80"
+                />
 
-    <!-- Key Outcomes / Metrics -->
-    <section class="space-y-2">
-        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
-            <i class="fa-solid fa-chart-line text-cyan-500"></i> Key Outcomes &amp; Technical Highlights
-        </h2>
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-            <div class="p-3 bg-slate-100 dark:bg-slate-800/60 rounded-lg border border-slate-200 dark:border-slate-700/60">
-                <span class="block font-bold text-cyan-600 dark:text-cyan-400 text-lg">100%</span>
-                <span class="text-[11px] text-slate-500 dark:text-slate-400">VLAN Isolation</span>
+                <div class="p-4 border-t border-slate-200 dark:border-slate-800/80 bg-slate-900/95 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                    <div>
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 backdrop-blur-md mb-1">
+                            <i class="fa-solid fa-sitemap text-[10px]"></i> Core / Distribution Architecture
+                        </span>
+                        <h3 class="text-white font-semibold text-sm">Cisco Packet Tracer Multi-VLAN &amp; OSPF Lab Model</h3>
+                    </div>
+                    <span class="text-xs text-slate-300 flex items-center gap-1.5 font-mono">
+                        <i class="fa-solid fa-check-double text-cyan-400"></i> Verified Convergence
+                    </span>
+                </div>
             </div>
-            <div class="p-3 bg-slate-100 dark:bg-slate-800/60 rounded-lg border border-slate-200 dark:border-slate-700/60">
-                <span class="block font-bold text-cyan-600 dark:text-cyan-400 text-lg">OSPF</span>
-                <span class="text-[11px] text-slate-500 dark:text-slate-400">Area 0 Convergence</span>
+        </section>
+
+        <!-- Technical Architecture & Specs -->
+        <section class="space-y-3">
+            <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-layer-group text-cyan-500"></i> Core Network Architecture &amp; Implementation
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-cyan-500/10 rounded-full blur-xl pointer-events-none"></div>
+                    <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-sitemap text-cyan-500"></i> VLAN Segmentation &amp; Trunking
+                    </h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Configured departmental VLANs (Management, Data, VoIP, and Guest) on Layer 2 switches. Implemented 802.1Q trunking with custom Native VLAN mapping and active DTP disabling for security.
+                    </p>
+                </div>
+
+                <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-blue-500/10 rounded-full blur-xl pointer-events-none"></div>
+                    <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-route text-cyan-500"></i> Inter-VLAN Routing &amp; L3 Switching
+                    </h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Deployed Router-on-a-Stick (ROAS) sub-interfaces on Cisco routers and configured Switched Virtual Interfaces (SVIs) on Layer 3 switches for high-throughput inter-departmental packet routing.
+                    </p>
+                </div>
+
+                <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-teal-500/10 rounded-full blur-xl pointer-events-none"></div>
+                    <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-diagram-project text-cyan-500"></i> OSPF Dynamic Routing
+                    </h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Implemented Single-Area OSPF (Area 0) across core routers. Configured passive interfaces to prevent unauthorized routing updates on client-facing subnets and calibrated link metrics.
+                    </p>
+                </div>
+
+                <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-emerald-500/10 rounded-full blur-xl pointer-events-none"></div>
+                    <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-lock text-cyan-500"></i> Security Hardening &amp; NAT
+                    </h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Configured Port Security (Sticky MAC limits), SSH access (RSA 2048-bit keys), Access Control Lists (Extended ACLs), and Dynamic NAT/PAT for secure edge internet gateway connectivity.
+                    </p>
+                </div>
             </div>
-            <div class="p-3 bg-slate-100 dark:bg-slate-800/60 rounded-lg border border-slate-200 dark:border-slate-700/60">
-                <span class="block font-bold text-cyan-600 dark:text-cyan-400 text-lg">PAT / NAT</span>
-                <span class="text-[11px] text-slate-500 dark:text-slate-400">Edge Gateway</span>
+        </section>
+
+        <!-- Professional Network Operations & Verification Protocols -->
+        <section class="space-y-3">
+            <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved text-cyan-500"></i> Infrastructure Operations &amp; Verification Protocols
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2">
+                    <h3 class="font-semibold text-slate-900 dark:text-white flex items-center">
+                        <i class="fa-solid fa-wave-square text-cyan-500 mr-2"></i> Dynamic Adjacency Validation
+                    </h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Monitored link-state database updates and verified peer neighbor states across core nodes to maintain route convergence and low-latency failover resilience.
+                    </p>
+                </div>
+
+                <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2">
+                    <h3 class="font-semibold text-slate-900 dark:text-white flex items-center">
+                        <i class="fa-solid fa-sliders text-cyan-500 mr-2"></i> Traffic Segmentation Auditing
+                    </h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Audited 802.1Q encapsulation frames and trunk connection health to ensure strict logical isolation across administrative and operational subnets.
+                    </p>
+                </div>
+
+                <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2">
+                    <h3 class="font-semibold text-slate-900 dark:text-white flex items-center">
+                        <i class="fa-solid fa-user-shield text-cyan-500 mr-2"></i> Edge Access Safeguards
+                    </h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Enforced encrypted remote access protocols, restricted management console permissions, and applied interface-level MAC security controls.
+                    </p>
+                </div>
             </div>
-            <div class="p-3 bg-slate-100 dark:bg-slate-800/60 rounded-lg border border-slate-200 dark:border-slate-700/60">
-                <span class="block font-bold text-cyan-600 dark:text-cyan-400 text-lg">SSH v2</span>
-                <span class="text-[11px] text-slate-500 dark:text-slate-400">Hardened Remote Access</span>
+        </section>
+
+        <!-- Key Outcomes / Metrics -->
+        <section class="space-y-3">
+            <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-chart-line text-cyan-500"></i> Key Outcomes &amp; Technical Highlights
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+                <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                    <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">100%</span>
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">VLAN Isolation</span>
+                </div>
+                <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                    <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">OSPF</span>
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Area 0 Convergence</span>
+                </div>
+                <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                    <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">PAT / NAT</span>
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Edge Gateway</span>
+                </div>
+                <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                    <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">SSH v2</span>
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Hardened Remote Access</span>
+                </div>
             </div>
-        </div>
-    </section>
-</article>
-    </main>
+        </section>
+
+    </article>
+</main>
 
     <footer>
         <p>&copy; 2026 Sekoala. All rights reserved.</p>
