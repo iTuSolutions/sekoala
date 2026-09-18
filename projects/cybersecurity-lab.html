@@ -279,144 +279,110 @@
   </div>
 </header>
     <main>
-<article class="mx-auto max-w-4xl space-y-6 text-sm text-slate-700 dark:text-slate-300">
+      <article class="mx-auto max-w-4xl space-y-6 text-sm text-slate-700 dark:text-slate-300">
     <!-- Header Summary -->
     <header class="border-b border-slate-200 dark:border-slate-800 pb-4">
-        <h1 class="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">Isolated Cybersecurity Testing &amp; Threat Detection Lab</h1>
+        <h1 class="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">
+            <i class="fa-solid fa-shield-halved text-cyan-500 mr-2"></i>Isolated Cybersecurity Testing &amp; Threat Detection Lab
+        </h1>
         <p class="text-xs font-semibold text-cyan-600 dark:text-cyan-400 mt-1 uppercase tracking-wider">
-            Scope: Virtualization Isolation, Packet Analysis, Vulnerability Assessment &amp; Log Auditing
+            Scope: Virtualization Isolation, Threat Analysis, Incident Detection &amp; Security Auditing
         </p>
     </header>
 
     <!-- Overview Section -->
     <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Project Overview</h2>
+        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-circle-info text-cyan-500"></i> Project Overview
+        </h2>
         <p class="leading-relaxed">
-            Constructed an isolated, sandboxed virtual network environment using Oracle VM VirtualBox and host-only networking. The lab facilitates safe malware behavior analysis, vulnerability assessments, intrusion detection system (IDS) testing, and live network traffic capture to study packet behavior under simulated attack conditions.
+            Constructed a sandboxed virtual lab environment to evaluate system vulnerabilities, study intrusion detection techniques, and monitor security telemetry safely. The setup provides a dedicated testing ground to observe threat behavior, inspect raw packet exchanges, and implement host-hardening protocols without exposing production infrastructure to risk.
         </p>
     </section>
 
-    <!-- Lab Architecture & Tools -->
+    <!-- Lab Architecture & Capabilities -->
     <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Core Lab Components &amp; Implementation</h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <li class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
-                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center mb-1">
-                    <i class="fa-solid fa-network-wired text-cyan-500 mr-2"></i> Isolated Network Segmentation
+        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-cubes text-cyan-500"></i> Key Capabilities &amp; Architecture
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2">
+                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center">
+                    <i class="fa-solid fa-network-wired text-cyan-500 mr-2"></i> Network Isolation &amp; Segmentation
                 </h3>
-                <p class="text-xs text-slate-600 dark:text-slate-400">
-                    Configured Host-Only and Internal Network adapters in VirtualBox to isolate attacker (Kali Linux) and victim nodes (Windows Server / Metasploitable) from production networks.
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Configured isolated virtual adapters to maintain strict boundaries between host workstations and target nodes, ensuring controlled network boundary testing.
                 </p>
-            </li>
+            </div>
 
-            <li class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
-                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center mb-1">
-                    <i class="fa-solid fa-microchip text-cyan-500 mr-2"></i> Packet Inspection &amp; Forensics
+            <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2">
+                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center">
+                    <i class="fa-solid fa-microchip text-cyan-500 mr-2"></i> Packet Inspection &amp; Telemetry
                 </h3>
-                <p class="text-xs text-slate-600 dark:text-slate-400">
-                    Utilized Wireshark and TShark to capture promiscuous network traffic, analyzing TCP handshake anomalies, payload contents, ARP spoofing attempts, and port scan signatures.
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Utilized protocol analyzer tools to inspect active network traffic, identifying structural packet anomalies, unencrypted communication risks, and unauthorized scan patterns.
                 </p>
-            </li>
+            </div>
 
-            <li class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
-                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center mb-1">
-                    <i class="fa-solid fa-bug text-cyan-500 mr-2"></i> Threat Detection &amp; Scanning
+            <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2">
+                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center">
+                    <i class="fa-solid fa-bug text-cyan-500 mr-2"></i> Threat Detection &amp; Audit Logging
                 </h3>
-                <p class="text-xs text-slate-600 dark:text-slate-400">
-                    Executed controlled Nmap network scans and vulnerability assessments to evaluate open ports, service versions, and OS fingerprinting while logging diagnostic patterns.
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Performed vulnerability assessments to detect unpatched services and mapped security events using system event logs to trace authentication failures.
                 </p>
-            </li>
+            </div>
 
-            <li class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
-                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center mb-1">
-                    <i class="fa-solid fa-shield-halved text-cyan-500 mr-2"></i> Log Monitoring &amp; Hardening
+            <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2">
+                <h3 class="font-semibold text-slate-900 dark:text-white flex items-center">
+                    <i class="fa-solid fa-lock text-cyan-500 mr-2"></i> Endpoint Hardening &amp; Mitigation
                 </h3>
-                <p class="text-xs text-slate-600 dark:text-slate-400">
-                    Analyzed Windows Event Logs (Sysmon) and Linux Syslog entries to correlate login failures, privilege escalation alerts, and unauthorized process execution events.
+                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Established defensive host-based firewall policies, reduced unnecessary operating system attack surfaces, and enforced strong account control privileges.
                 </p>
-            </li>
-        </ul>
+            </div>
+        </div>
     </section>
 
-    <!-- Active Threat Detection & Incident Response Workflow -->
-    <section class="space-y-4">
-        <div class="flex items-center justify-between">
-            <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
-                <i class="fa-solid fa-shield-virus text-cyan-500"></i> Active Incident Response &amp; Detection Workflow
-            </h2>
-            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20">
-                <span class="h-1.5 w-1.5 rounded-full bg-cyan-500 animate-pulse"></span> MITRE ATT&amp;CK Mapped
-            </span>
-        </div>
-
-        <!-- Step Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-            <!-- Stage 1: Detection -->
-            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2 relative overflow-hidden group hover:border-cyan-500/40 transition-colors">
-                <div class="flex items-center justify-between text-xs text-slate-400 font-mono">
-                    <span>STAGE 01</span>
-                    <span class="text-amber-400 font-semibold">T1046 / Recon</span>
-                </div>
-                <h3 class="font-semibold text-white text-sm">Telemetry Ingestion &amp; Scan Alert</h3>
-                <p class="text-xs text-slate-400">
-                    Suricata IDS detects anomalous TCP SYN sweep across internal subnet <code class="text-cyan-400">192.168.56.0/24</code> triggering rule ID <code class="text-emerald-400">2001219</code>.
-                </p>
-                <div class="bg-slate-950 p-2 rounded-lg font-mono text-[11px] text-slate-300 border border-slate-800/80">
-                    <span class="text-amber-400">[ALERT]</span> Portscan detected from <span class="text-cyan-400">192.168.56.105</span> &rarr; <span class="text-rose-400">22, 80, 445</span>
-                </div>
-            </div>
-
-            <!-- Stage 2: Correlation -->
-            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2 relative overflow-hidden group hover:border-cyan-500/40 transition-colors">
-                <div class="flex items-center justify-between text-xs text-slate-400 font-mono">
-                    <span>STAGE 02</span>
-                    <span class="text-cyan-400 font-semibold">T1110 / Brute Force</span>
-                </div>
-                <h3 class="font-semibold text-white text-sm">SIEM &amp; Log Correlation</h3>
-                <p class="text-xs text-slate-400">
-                    Sysmon Event ID <code class="text-cyan-400">4625</code> captures 15 consecutive failed SSH/RDP login attempts paired with suspicious process creation.
-                </p>
-                <div class="bg-slate-950 p-2 rounded-lg font-mono text-[11px] text-slate-300 border border-slate-800/80">
-                    <span class="text-cyan-400">Sysmon:</span> Target <span class="text-emerald-400">Srv-01</span> | User <span class="text-rose-400">Administrator</span> | Status <span class="text-amber-400">0xC000006D</span>
-                </div>
-            </div>
-
-            <!-- Stage 3: Containment -->
-            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2 relative overflow-hidden group hover:border-cyan-500/40 transition-colors">
-                <div class="flex items-center justify-between text-xs text-slate-400 font-mono">
-                    <span>STAGE 03</span>
-                    <span class="text-emerald-400 font-semibold">T1562 / Isolation</span>
-                </div>
-                <h3 class="font-semibold text-white text-sm">Automated Containment</h3>
-                <p class="text-xs text-slate-400">
-                    Host-based firewall rules automatically isolate target IP via automated script trigger, preserving memory dump for forensic analysis.
-                </p>
-                <div class="bg-slate-950 p-2 rounded-lg font-mono text-[11px] text-slate-300 border border-slate-800/80">
-                    <span class="text-emerald-400">[ACTION]</span> Isolation Rule Active: Drop all inbound from <span class="text-rose-400">192.168.56.105</span>
-                </div>
-            </div>
+    <!-- Incident Workflow -->
+    <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-shield-virus text-cyan-500"></i> Threat Incident &amp; Response Workflow
+        </h2>
+        <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-3">
+            <p class="leading-relaxed">
+                <strong>1. Reconnaissance Detection:</strong> Intrusion detection sensors monitor for unauthorized port sweeps and flag suspicious network discovery attempts across internal subnets.
+            </p>
+            <p class="leading-relaxed">
+                <strong>2. Event Correlation:</strong> System monitoring agents capture repeated failed authentication attempts and correlate log alerts with active process behavior.
+            </p>
+            <p class="leading-relaxed">
+                <strong>3. Response &amp; Mitigation:</strong> Automated host-level firewall rules isolate suspicious nodes instantly to prevent lateral movement and safeguard system integrity.
+            </p>
         </div>
     </section>
 
     <!-- Key Outcomes / Metrics -->
     <section class="space-y-2">
-        <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Key Outcomes &amp; Technical Highlights</h2>
+        <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-chart-line text-cyan-500"></i> Key Outcomes &amp; Summary
+        </h2>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
             <div class="p-3 bg-slate-100 dark:bg-slate-800/60 rounded-lg border border-slate-200 dark:border-slate-700/60">
-                <span class="block font-bold text-cyan-600 dark:text-cyan-400 text-lg">Zero</span>
-                <span class="text-[11px] text-slate-500 dark:text-slate-400">Network Leakage</span>
+                <span class="block font-bold text-cyan-600 dark:text-cyan-400 text-lg">100%</span>
+                <span class="text-[11px] text-slate-500 dark:text-slate-400">Environment Isolation</span>
             </div>
             <div class="p-3 bg-slate-100 dark:bg-slate-800/60 rounded-lg border border-slate-200 dark:border-slate-700/60">
-                <span class="block font-bold text-cyan-600 dark:text-cyan-400 text-lg">PCAP</span>
-                <span class="text-[11px] text-slate-500 dark:text-slate-400">Deep Packet Analysis</span>
+                <span class="block font-bold text-cyan-600 dark:text-cyan-400 text-lg">Deep</span>
+                <span class="text-[11px] text-slate-500 dark:text-slate-400">Packet Analysis</span>
             </div>
             <div class="p-3 bg-slate-100 dark:bg-slate-800/60 rounded-lg border border-slate-200 dark:border-slate-700/60">
-                <span class="block font-bold text-cyan-600 dark:text-cyan-400 text-lg">Sysmon</span>
+                <span class="block font-bold text-cyan-600 dark:text-cyan-400 text-lg">Active</span>
                 <span class="text-[11px] text-slate-500 dark:text-slate-400">Event Auditing</span>
             </div>
             <div class="p-3 bg-slate-100 dark:bg-slate-800/60 rounded-lg border border-slate-200 dark:border-slate-700/60">
                 <span class="block font-bold text-cyan-600 dark:text-cyan-400 text-lg">Hardened</span>
-                <span class="text-[11px] text-slate-500 dark:text-slate-400">Host Configurations</span>
+                <span class="text-[11px] text-slate-500 dark:text-slate-400">Endpoint Protection</span>
             </div>
         </div>
     </section>
