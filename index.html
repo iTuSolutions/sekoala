@@ -270,98 +270,101 @@
   </div>
 </header>
   
-<main>
+<!-- Main Container with Responsive Top Margin to Clear Fixed Header -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 sm:mt-32 lg:mt-36 mb-12 sm:mb-16 lg:mb-20">
+
   <!-- SECTION: Hero Banner -->
-<section class="relative w-full overflow-hidden bg-slate-950 text-slate-100" id="top">
-  <!-- Parallax / Background Layer -->
-  <div id="parallax-hero-bg" class="relative w-full min-h-[90vh] bg-fixed bg-cover bg-center bg-no-repeat flex items-center justify-center p-4 md:p-10 transition-all duration-700" style="background-image: linear-gradient(to bottom right, rgba(15, 23, 42, 0.88), rgba(6, 182, 212, 0.25)), url('https://picsum.photos/1920/1080?technology');">
-    
-    <!-- Interactive Particles/Animation Canvas -->
-    <canvas id="hero-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
-
-    <!-- Glassmorphic Content Card (Middle-Out) -->
-    <div class="scroll-anim relative z-10 w-full max-w-6xl mx-auto backdrop-blur-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200/80 dark:border-cyan-500/20 rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl transition-all duration-300 hover:border-cyan-500/40" data-anim="middle-out">
+  <section class="relative w-full overflow-hidden bg-slate-950 text-slate-100 rounded-3xl" id="top">
+    <!-- Parallax / Background Layer -->
+    <div id="parallax-hero-bg" class="relative w-full min-h-[90vh] bg-fixed bg-cover bg-center bg-no-repeat flex items-center justify-center p-4 md:p-10 transition-all duration-700" style="background-image: linear-gradient(to bottom right, rgba(15, 23, 42, 0.88), rgba(6, 182, 212, 0.25)), url('https://picsum.photos/1920/1080?technology');">
       
-      <div class="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-14">
+      <!-- Interactive Particles/Animation Canvas -->
+      <canvas id="hero-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
+
+      <!-- Glassmorphic Content Card (Middle-Out) -->
+      <div class="scroll-anim relative z-10 w-full max-w-6xl mx-auto backdrop-blur-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200/80 dark:border-cyan-500/20 rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl transition-all duration-300 hover:border-cyan-500/40" data-anim="middle-out">
         
-        <!-- Left Column: Bio & Call to Actions -->
-        <div class="scroll-anim flex-1 text-left space-y-6" data-anim="fade-right" data-delay="100">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-14">
           
-          <!-- Availability Badge (Middle-In) -->
-          <div class="scroll-anim inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs md:text-sm font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 shadow-inner" data-anim="middle-in" data-delay="150">
-            <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-            </span>
-            Actively Seeking IT &amp; Technical Opportunities
+          <!-- Left Column: Bio & Call to Actions -->
+          <div class="scroll-anim flex-1 text-left space-y-6" data-anim="fade-right" data-delay="100">
+            
+            <!-- Availability Badge (Middle-In) -->
+            <div class="scroll-anim inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs md:text-sm font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 shadow-inner" data-anim="middle-in" data-delay="150">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              Actively Seeking IT &amp; Technical Opportunities
+            </div>
+
+            <!-- Main Heading & Subtitle -->
+            <div class="space-y-3">
+              <!-- Top to Bottom -->
+              <h1 class="scroll-anim text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tight leading-tight" data-anim="fade-down" data-delay="200">
+                Hi, I'm <span class="bg-gradient-to-r from-cyan-600 to-blue-600 dark:from-cyan-400 dark:to-blue-500 bg-clip-text text-transparent">Sekoala Bopape</span>
+              </h1>
+              
+              <!-- Bottom to Top with Typed.js target element -->
+              <p class="scroll-anim text-base md:text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed" data-anim="fade-up" data-delay="300">
+                <span id="typed-text" class="text-cyan-600 dark:text-cyan-400 font-semibold"></span> <span class="text-cyan-500 font-bold">|</span> Cybersecurity &amp; Systems Hardening
+              </p>
+              
+              <p class="scroll-anim text-xs sm:text-sm font-semibold tracking-wider uppercase text-slate-500 dark:text-slate-400" data-anim="fade-up" data-delay="350">
+                IT Technician &bull; Network Engineer &bull; Web Developer
+              </p>
+            </div>
+
+            <!-- Contact / Context Pills (Left to Right) -->
+            <div class="scroll-anim flex flex-wrap gap-2.5 pt-1" data-anim="fade-right" data-delay="400">
+              <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs md:text-sm font-medium bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60 shadow-sm">
+                <i class="fa-solid fa-server text-cyan-500"></i> Server &amp; System Administration
+              </span>
+              
+              <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs md:text-sm font-medium bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60 shadow-sm">
+                <i class="fa-solid fa-network-wired text-cyan-500"></i> LAN/WAN &amp; Hardware Support
+              </span>
+              
+              <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs md:text-sm font-medium bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60 shadow-sm">
+                <i class="fa-solid fa-location-dot text-cyan-500"></i> Polokwane, Limpopo
+              </span>
+            </div>
+
+            <!-- Action Button Group (Middle-In) -->
+            <div class="scroll-anim flex flex-wrap items-center gap-3.5 pt-2" data-anim="middle-in" data-delay="500">
+              <a href="https://drive.google.com/drive/folders/1v7imTkqH-aocHah8-mOYI3E2C10Btp9Y" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white bg-amber-600 hover:bg-amber-500 active:bg-amber-700 shadow-lg shadow-amber-600/20 transition-all duration-300 transform hover:-translate-y-0.5">
+                <i class="fas fa-download"></i> Download CV
+              </a>
+              
+              <a href="projects/index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700 shadow-lg shadow-cyan-600/20 transition-all duration-300 transform hover:-translate-y-0.5">
+                <i class="fas fa-briefcase"></i> View Projects
+              </a>
+
+              <a href="contact/index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 transition-all duration-300 transform hover:-translate-y-0.5">
+                <i class="fas fa-envelope"></i> Get in Touch
+              </a>
+            </div>
+
           </div>
 
-          <!-- Main Heading & Subtitle -->
-          <div class="space-y-3">
-            <!-- Top to Bottom -->
-            <h1 class="scroll-anim text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tight leading-tight" data-anim="fade-down" data-delay="200">
-              Hi, I'm <span class="bg-gradient-to-r from-cyan-600 to-blue-600 dark:from-cyan-400 dark:to-blue-500 bg-clip-text text-transparent">Sekoala Bopape</span>
-            </h1>
-            
-            <!-- Bottom to Top -->
-            <p class="scroll-anim text-base md:text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed" data-anim="fade-up" data-delay="300">
-              Certified IT Support Specialist &amp; Network Engineer <span class="text-cyan-500 font-bold">|</span> Cybersecurity &amp; Systems Hardening
-            </p>
-            
-            <p class="scroll-anim text-xs sm:text-sm font-semibold tracking-wider uppercase text-slate-500 dark:text-slate-400" data-anim="fade-up" data-delay="350">
-              IT Technician &bull; Network Engineer &bull; Web Developer
-            </p>
-          </div>
+          <!-- Vertical Divider (Top to Bottom) -->
+          <div class="scroll-anim hidden lg:block w-px h-72 bg-gradient-to-b from-transparent via-cyan-500/40 to-transparent" data-anim="fade-down" data-delay="250"></div>
 
-          <!-- Contact / Context Pills (Left to Right) -->
-          <div class="scroll-anim flex flex-wrap gap-2.5 pt-1" data-anim="fade-right" data-delay="400">
-            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs md:text-sm font-medium bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60 shadow-sm">
-              <i class="fa-solid fa-server text-cyan-500"></i> Server &amp; System Administration
-            </span>
-            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs md:text-sm font-medium bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60 shadow-sm">
-              <i class="fa-solid fa-network-wired text-cyan-500"></i> LAN/WAN &amp; Hardware Support
-            </span>
-            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs md:text-sm font-medium bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60 shadow-sm">
-              <i class="fa-solid fa-location-dot text-cyan-500"></i> Polokwane, Limpopo
-            </span>
-          </div>
-
-          <!-- Action Button Group (Middle-In) -->
-          <div class="scroll-anim flex flex-wrap items-center gap-3.5 pt-2" data-anim="middle-in" data-delay="500">
-            <a href="https://drive.google.com/drive/folders/1v7imTkqH-aocHah8-mOYI3E2C10Btp9Y" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white bg-amber-600 hover:bg-amber-500 active:bg-amber-700 shadow-lg shadow-amber-600/20 transition-all duration-300 transform hover:-translate-y-0.5">
-              <i class="fas fa-download"></i> Download CV
-            </a>
-            
-            <a href="projects/index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700 shadow-lg shadow-cyan-600/20 transition-all duration-300 transform hover:-translate-y-0.5">
-              <i class="fas fa-briefcase"></i> View Projects
-            </a>
-
-            <a href="contact/index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 transition-all duration-300 transform hover:-translate-y-0.5">
-              <i class="fas fa-envelope"></i> Get in Touch
-            </a>
-          </div>
-
-        </div>
-
-        <!-- Vertical Divider (Top to Bottom) -->
-        <div class="scroll-anim hidden lg:block w-px h-72 bg-gradient-to-b from-transparent via-cyan-500/40 to-transparent" data-anim="fade-down" data-delay="250"></div>
-
-        <!-- Right Column: Profile Avatar (Right to Left & Middle-Out Frame) -->
-        <div class="scroll-anim flex justify-center items-center w-full lg:w-auto shrink-0" data-anim="fade-left" data-delay="300">
-          <div class="relative group">
-            <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-cyan-500 via-teal-400 to-blue-600 blur-lg transition duration-500"></div>
-            
-            <div class="scroll-anim relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-cyan-500/60 shadow-2xl bg-slate-100 dark:bg-slate-800" data-anim="middle-out" data-delay="450">
-              <img src="https://res.cloudinary.com/dulmfdigk/image/upload/v1788486144/Firefly_Gemini_Flash_Change_clothes_to_professional_office_suite_gray_lines_stripes_35137_p9l523.jpg" alt="Sekoala Bopape Portrait" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"/>
+          <!-- Right Column: Profile Avatar (Right to Left & Middle-Out Frame) -->
+          <div class="scroll-anim flex justify-center items-center w-full lg:w-auto shrink-0" data-anim="fade-left" data-delay="300">
+            <div class="relative group">
+              <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-cyan-500 via-teal-400 to-blue-600 blur-lg transition duration-500"></div>
+              
+              <div class="scroll-anim relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-cyan-500/60 shadow-2xl bg-slate-100 dark:bg-slate-800" data-anim="middle-out" data-delay="450">
+                <img src="https://res.cloudinary.com/dulmfdigk/image/upload/v1788486144/Firefly_Gemini_Flash_Change_clothes_to_professional_office_suite_gray_lines_stripes_35137_p9l523.jpg" alt="Sekoala Bopape Portrait" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"/>
+              </div>
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
 <!-- SECTION: Professional Cover Letter -->
 <section class="profile-section relative w-full overflow-hidden my-12" id="cover-letter">
