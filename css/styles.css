@@ -18,3 +18,14 @@
   opacity: 1;
   transform: translate(0, 0) scale(1);
 }
+
+/* SAFETY FIX: Prevent menu links, navigation bars, and fixed headers from ever being hidden */
+nav .scroll-anim,
+header .scroll-anim,
+.menu-links .scroll-anim,
+nav a,
+.navbar a {
+  opacity: 1 !important;
+  transform: none !important;
+  will-change: auto !important;
+}
