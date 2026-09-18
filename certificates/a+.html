@@ -506,29 +506,198 @@
   </section>
 </main>
 
-<!-- SECTION: Footer with Copilot & Code Branding -->
-<footer class="site-footer max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-cyan-500/30 dark:border-gray-800 text-gray-600 dark:text-gray-400 text-sm transition-colors duration-300 scroll-anim" data-anim="fade-down" id="site-footer-section">
-  
-  <!-- Copyright Line -->
-  <p class="font-medium text-gray-700 dark:text-gray-300 text-center sm:text-left scroll-anim" data-anim="fade-right" data-delay="150">
-    &copy; 2026 Sekoala Daniel Bopape. All Rights Reserved.
-  </p>
-  
-  <!-- Branding Container -->
-  <div class="footer-brand-container flex items-center gap-2.5 bg-cyan-50/80 dark:bg-gray-900/80 border border-cyan-500/40 dark:border-gray-800 px-4 py-2 rounded-full shadow-sm backdrop-blur-sm scroll-anim" data-anim="middle-out" data-delay="200">
-    <span class="text-xs font-semibold tracking-wider uppercase text-gray-500 dark:text-gray-400 scroll-anim" data-anim="fade-down" data-delay="250">Powered by</span>
-    
-    <img alt="Copilot Logo" class="footer-copilot-img h-5 w-auto object-contain transition-transform hover:scale-105 scroll-anim" data-anim="middle-in" data-delay="300" src="https://res.cloudinary.com/dulmfdigk/image/upload/v1765936308/copilot_image_1765908460899_xiwnqc.png"/>
-    
-    <span class="text-cyan-500/50 dark:text-gray-700 font-light">|</span>
-    
-    <i class="fa-solid fa-code footer-code-icon text-cyan-500 dark:text-gray-300 text-sm scroll-anim" data-anim="fade-up" data-delay="350"></i>
-    
-    <a class="font-bold text-cyan-500 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors scroll-anim" data-anim="fade-left" data-delay="400" href="https://www.it-u.co.za" rel="noopener" target="_blank">
-      iT-U
-    </a>
-  </div>
+<!-- FOOTER SECTION (WITH HEADING ICONS, DYNAMIC LOGOS, SOCIAL CONNECT & LEGAL/COOKIE ROW) -->
+<footer class="bg-slate-100 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12 mt-20 transition-colors duration-300 scroll-anim" data-anim="middle-out" data-delay="100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- ROW 1: Main Grid Navigation, Socials, Newsletter & Contact Info -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+            
+            <!-- Column 1: Brand & Description (Fade Right: Left to Right) -->
+            <div class="lg:col-span-1 scroll-anim" data-anim="fade-right" data-delay="150">
+                <a class="flex items-center space-x-3 group" href="https://www.sekoala.co.za">
+                    <!-- Sekoala Logo - Light Mode -->
+                    <img alt="Sekoala Bopape Logo (Light)" class="h-12 w-auto object-contain rounded-xl dark:hidden group-hover:scale-105 transition-transform duration-200 scroll-anim" data-anim="middle-in" data-delay="200" src="https://res.cloudinary.com/dulmfdigk/image/upload/v1765936762/Black_White_Minimalist_Signature_Personal_Brand_Logo_20251001_145830_0000_jvtg1p.png" />  
+                    
+                    <!-- Sekoala Logo - Dark Mode -->
+                    <img alt="Sekoala Bopape Logo (Dark)" class="h-12 w-auto object-contain rounded-xl hidden dark:inline-block group-hover:scale-105 transition-transform duration-200 scroll-anim" data-anim="middle-in" data-delay="200" src="https://res.cloudinary.com/dulmfdigk/image/upload/v1765936763/Black_White_Minimalist_Signature_Personal_Brand_Logo_20251001_145831_0001_jn93le.png" />  
+                    
+                    <div>
+                        <span class="block font-bold text-lg tracking-wide text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition">Sekoala Bopape</span>
+                        <span class="block text-xs text-cyan-600 dark:text-cyan-400 font-medium">Polokwane, Limpopo</span>
+                    </div>
+                </a>
 
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mt-3 scroll-anim" data-anim="fade-up" data-delay="250">
+                    Professional IT specialist, web developer, and network engineer specializing in hardware diagnostics, cloud solutions, and zero-hosting web architecture based in Polokwane, Limpopo.
+                </p>
+            </div>
+
+            <!-- Column 2: Our Success Projects (Fade Down: Top to Bottom) -->
+            <div class="scroll-anim" data-anim="fade-down" data-delay="200">
+                <h4 class="text-slate-900 dark:text-white font-bold text-sm uppercase tracking-wider mb-4 flex items-center space-x-2 scroll-anim" data-anim="middle-in" data-delay="250">
+                    <i class="fa-solid fa-diagram-project text-cyan-600 dark:text-cyan-400"></i>
+                    <span>Our Projects</span>
+                </h4>
+                <ul class="list-disc list-inside space-y-2 text-sm text-slate-600 dark:text-slate-400 marker:text-cyan-600 dark:marker:text-cyan-400">
+                    <li class="scroll-anim" data-anim="fade-right" data-delay="300">
+                        <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition" href="https://tnseelectricalprojects.blogspot.com/" rel="noopener noreferrer" target="_blank">TNSE Electrical</a>
+                    </li>
+                    <li class="scroll-anim" data-anim="fade-right" data-delay="350">
+                        <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition" href="https://www.sekoala.co.za" rel="noopener noreferrer" target="_blank">About Sekoala</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Quick Navigation (Middle Out) -->
+            <div class="scroll-anim" data-anim="middle-out" data-delay="250">
+                <h4 class="text-slate-900 dark:text-white font-bold text-sm uppercase tracking-wider mb-4 flex items-center space-x-2 scroll-anim" data-anim="fade-down" data-delay="300">
+                    <i class="fa-solid fa-compass text-cyan-600 dark:text-cyan-400"></i>
+                    <span>Quick Links</span>
+                </h4>
+                <ul class="list-disc list-inside space-y-2 text-sm text-slate-600 dark:text-slate-400 marker:text-cyan-600 dark:marker:text-cyan-400">
+                    <li class="scroll-anim" data-anim="fade-up" data-delay="350">
+                        <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition" href="https://www.it-u.co.za/#services">IT Services</a>
+                    </li>
+                    <li class="scroll-anim" data-anim="fade-up" data-delay="400">
+                        <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition" href="https://www.it-u.co.za/#faq-section">FAQs</a>
+                    </li>
+                    <li class="scroll-anim" data-anim="fade-up" data-delay="450">
+                        <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition" href="https://www.it-u.co.za/#contactForm">Get Support</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Info (Fade Up: Bottom to Top) -->
+            <div class="scroll-anim" data-anim="fade-up" data-delay="300">
+                <h4 class="text-slate-900 dark:text-white font-bold text-sm uppercase tracking-wider mb-4 flex items-center space-x-2 scroll-anim" data-anim="middle-in" data-delay="350">
+                    <i class="fa-solid fa-headset text-cyan-600 dark:text-cyan-400"></i>
+                    <span>Contact Info</span>
+                </h4>
+                <ul class="space-y-2.5 text-sm text-slate-600 dark:text-slate-400">
+                    <li class="flex items-start scroll-anim" data-anim="fade-left" data-delay="400">
+                        <i class="fa-solid fa-location-dot text-cyan-600 dark:text-cyan-400 mr-2.5 mt-1"></i>
+                        <span>1354/5 Ramathope, Ga-Mothiba, Nobody, Polokwane, 0726</span>
+                    </li>
+                    <li class="flex items-center scroll-anim" data-anim="fade-left" data-delay="450">
+                        <i class="fa-solid fa-phone text-cyan-600 dark:text-cyan-400 mr-2.5"></i>
+                        <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition" href="tel:+27711405870">+27 71 140 5870</a>
+                    </li>
+                    <li class="flex items-center scroll-anim" data-anim="fade-left" data-delay="500">
+                        <i class="fa-solid fa-envelope text-cyan-600 dark:text-cyan-400 mr-2.5"></i>
+                        <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition" href="mailto:sekoalabopape@gmail.com">sekoalabopape@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 5: Newsletter Subscribe (Fade Left: Right to Left) -->
+            <div class="scroll-anim" data-anim="fade-left" data-delay="350">
+                <h4 class="text-slate-900 dark:text-white font-bold text-sm uppercase tracking-wider mb-4 flex items-center space-x-2 scroll-anim" data-anim="fade-down" data-delay="400">
+                    <i class="fa-solid fa-paper-plane text-cyan-600 dark:text-cyan-400"></i>
+                    <span>Subscribe</span>
+                </h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 mb-3 scroll-anim" data-anim="fade-up" data-delay="450">
+                    Subscribe to receive system maintenance updates and tech insights.
+                </p>
+                <form action="javascript:void(0);" class="space-y-2" id="newsletterForm">
+                    <div class="relative scroll-anim" data-anim="middle-in" data-delay="500">
+                        <input class="w-full px-3 py-2 text-xs text-slate-900 dark:text-white bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="Enter your email..." required="required" type="email" />
+                    </div>
+                    <button class="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-xs py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center space-x-2 scroll-anim" data-anim="middle-out" data-delay="550" type="submit">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>Subscribe Now</span>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- ROW 2: Social Connect Bar (Middle In & Out Staggered) -->
+        <div class="border-t border-slate-200 dark:border-slate-800 py-6 my-2 flex flex-col sm:flex-row items-center justify-between gap-4 scroll-anim" data-anim="middle-out" data-delay="200">
+            <div class="flex items-center space-x-2 text-slate-900 dark:text-white font-bold text-sm scroll-anim" data-anim="fade-right" data-delay="250">
+                <i class="fa-solid fa-share-nodes text-cyan-600 dark:text-cyan-400"></i>
+                <span>Connect With Us:</span>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+                <!-- Facebook -->
+                <a aria-label="Facebook" class="w-9 h-9 flex items-center justify-center rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition duration-200 scroll-anim" data-anim="middle-in" data-delay="300" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+                    <i class="fa-brands fa-facebook-f text-sm"></i>
+                </a>
+                <!-- TikTok -->
+                <a aria-label="TikTok" class="w-9 h-9 flex items-center justify-center rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-black hover:text-white dark:hover:bg-slate-700 transition duration-200 scroll-anim" data-anim="middle-in" data-delay="350" href="https://tiktok.com" rel="noopener noreferrer" target="_blank">
+                    <i class="fa-brands fa-tiktok text-sm"></i>
+                </a>
+                <!-- Instagram -->
+                <a aria-label="Instagram" class="w-9 h-9 flex items-center justify-center rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-pink-600 hover:text-white dark:hover:bg-pink-600 transition duration-200 scroll-anim" data-anim="middle-in" data-delay="400" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+                    <i class="fa-brands fa-instagram text-sm"></i>
+                </a>
+                <!-- LinkedIn -->
+                <a aria-label="LinkedIn" class="w-9 h-9 flex items-center justify-center rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-700 hover:text-white dark:hover:bg-blue-700 transition duration-200 scroll-anim" data-anim="middle-in" data-delay="450" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+                    <i class="fa-brands fa-linkedin-in text-sm"></i>
+                </a>
+                <!-- YouTube -->
+                <a aria-label="YouTube" class="w-9 h-9 flex items-center justify-center rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-red-600 hover:text-white dark:hover:bg-red-600 transition duration-200 scroll-anim" data-anim="middle-in" data-delay="500" href="https://youtube.com" rel="noopener noreferrer" target="_blank">
+                    <i class="fa-brands fa-youtube text-sm"></i>
+                </a>
+            </div>
+        </div>
+
+<!-- ROW 3: Legal, POPIA Compliance & Cookies Policy Bar (Fade Up & Fade Down Split) -->
+<div class="border-t border-slate-200 dark:border-slate-800 py-6 my-2 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-600 dark:text-slate-400 scroll-anim" data-anim="fade-up" data-delay="200">
+    <div class="flex items-center space-x-2 scroll-anim" data-anim="fade-right" data-delay="250">
+        <i class="fa-solid fa-cookie-bite text-cyan-600 dark:text-cyan-400 text-sm"></i>
+        <span>We use essential cookies &amp; POPIA compliant analytics to ensure optimum site speed and security.</span>
+    </div>
+    
+    <ul class="flex flex-wrap items-center space-x-6 font-medium">
+        <li class="scroll-anim" data-anim="fade-left" data-delay="300">
+            <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition flex items-center space-x-1.5" href="https://www.sekoala.co.za/legal/privacy-policy/index.html">
+                <i class="fa-solid fa-shield-halved text-[10px]"></i>
+                <span>Privacy Policy (POPIA)</span>
+            </a>
+        </li>
+        <li class="scroll-anim" data-anim="fade-left" data-delay="350">
+            <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition flex items-center space-x-1.5" href="https://www.sekoala.co.za/legal/terms-of-service/index.html">
+                <i class="fa-solid fa-file-contract text-[10px]"></i>
+                <span>Terms of Service</span>
+            </a>
+        </li>
+        <li class="scroll-anim" data-anim="fade-left" data-delay="400">
+            <a class="hover:text-cyan-600 dark:hover:text-cyan-400 transition flex items-center space-x-1.5" href="https://www.sekoala.co.za/legal/cookie-policy/index.html">
+                <i class="fa-solid fa-cookie text-[10px]"></i>
+                <span>Cookie Settings</span>
+            </a>
+        </li>
+    </ul>
+</div>
+      
+        <!-- ROW 4: Bottom Copyright & Developer Branding (Fade Up & Middle In) -->
+        <div class="border-t border-slate-200 dark:border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 scroll-anim" data-anim="fade-up" data-delay="200">
+            
+            <!-- Copyright Line -->
+            <p class="font-medium text-slate-700 dark:text-slate-300 text-xs text-center sm:text-left scroll-anim" data-anim="fade-right" data-delay="150">
+                &copy; 2026 Sekoala Daniel Bopape. All Rights Reserved.
+            </p>
+            
+            <!-- Branding Container -->
+            <div class="footer-brand-container flex items-center gap-2.5 bg-cyan-50/80 dark:bg-gray-900/80 border border-cyan-500/40 dark:border-gray-800 px-4 py-2 rounded-full shadow-sm backdrop-blur-sm scroll-anim" data-anim="middle-out" data-delay="200">
+                <span class="text-xs font-semibold tracking-wider uppercase text-gray-500 dark:text-gray-400 scroll-anim" data-anim="fade-down" data-delay="250">Powered by</span>
+                
+                <img alt="Copilot Logo" class="footer-copilot-img h-5 w-auto object-contain transition-transform hover:scale-105 scroll-anim" data-anim="middle-in" data-delay="300" src="https://res.cloudinary.com/dulmfdigk/image/upload/v1765936308/copilot_image_1765908460899_xiwnqc.png"/>
+                
+                <span class="text-cyan-500/50 dark:text-gray-700 font-light">|</span>
+                
+                <i class="fa-solid fa-code footer-code-icon text-cyan-500 dark:text-gray-300 text-sm scroll-anim" data-anim="fade-up" data-delay="350"></i>
+                
+                <a class="font-bold text-cyan-500 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors text-xs scroll-anim" data-anim="fade-left" data-delay="400" href="https://www.it-u.co.za" rel="noopener" target="_blank">
+                    iT-U
+                </a>
+            </div>
+
+        </div>
+
+    </div>
 </footer>
 
 <script src="../js/main.js"></script>
