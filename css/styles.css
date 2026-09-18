@@ -1,1 +1,20 @@
+/* Base hidden states (Only apply to elements meant to animate on scroll) */
+.scroll-anim {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
+/* Directional Initial States */
+.scroll-anim[data-anim="fade-right"] { transform: translateX(-40px); }
+.scroll-anim[data-anim="fade-left"]  { transform: translateX(40px); }
+.scroll-anim[data-anim="fade-up"]    { transform: translateY(40px); }
+.scroll-anim[data-anim="fade-down"]  { transform: translateY(-40px); }
+.scroll-anim[data-anim="middle-out"] { transform: scale(0.85); }
+.scroll-anim[data-anim="middle-in"]  { transform: scale(1.15); }
+
+/* Active (Visible) State */
+.scroll-anim.is-visible {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
