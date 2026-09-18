@@ -255,12 +255,12 @@ if (faqsSection) {
     });
   }
 }
-  // --- 4. Typed.js Initialization ---
+// --- 4. Typed.js Initialization ---
   setTimeout(() => {
-    const typedTarget = document.getElementById('typed-output');
+    const typedTarget = document.getElementById('typed-text');
     if (typedTarget) {
       if (typeof Typed !== 'undefined') {
-        new Typed('#typed-output', {
+        new Typed('#typed-text', {
           strings: [
             "CompTIA A+ Certified PC Technician.",
             "CCNA-trained Network Specialist.",
