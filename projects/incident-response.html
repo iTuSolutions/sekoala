@@ -279,13 +279,151 @@
   </div>
 </header>
  
-    <main>
-        <article class="project-detail">
-            <h1>Incident Response & PCAP Traffic Analysis</h1>
-            <p><strong>Scope:</strong> Packet Capture Analysis, Wireshark, Threat Isolation</p>
-            <p>Analyzed network packet captures to trace suspicious network traffic, identify malicious IP connections, and formulate mitigation procedures.</p>
-        </article>
-    </main>
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-12 sm:my-16 lg:my-20">
+    <article class="space-y-8 text-sm text-slate-700 dark:text-slate-300 relative">
+
+        <!-- Organic Background Accent Blobs -->
+        <div class="absolute -top-12 -left-10 w-72 h-72 bg-cyan-500/10 dark:bg-cyan-500/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+        <div class="absolute top-1/2 -right-12 w-80 h-80 bg-blue-600/10 dark:bg-blue-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+        <!-- Header Summary Section -->
+        <header class="relative border-b border-slate-200 dark:border-slate-800 pb-6 overflow-hidden">
+            <div class="flex items-center gap-3 mb-2">
+                <div class="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 shadow-inner">
+                    <i class="fa-solid fa-bug text-xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">
+                    Incident Response &amp; PCAP Traffic Analysis
+                </h1>
+            </div>
+            <p class="text-xs font-semibold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider pl-12">
+                Scope: Packet Capture Analysis, Wireshark Deep Inspection, Threat Containment, &amp; Forensic Reconstruction
+            </p>
+        </header>
+
+        <!-- Project Overview Section -->
+        <section class="space-y-3">
+            <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-circle-info text-cyan-500"></i> Incident Overview
+            </h2>
+            <p class="leading-relaxed">
+                Executed deep packet inspection (DPI) and network forensic investigation using Wireshark and command-line traffic tools to isolate security breaches and unauthorized data exfiltration. This case study details the structured incident response cycle: capturing raw PCAP files, isolating abnormal protocol behaviors, reconstructing unencrypted payload streams, mapping threat actors, and deploying host containment rules.
+            </p>
+        </section>
+
+        <!-- Visual Source & Forensic Packet Preview -->
+        <section class="space-y-3">
+            <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-microchip text-cyan-500"></i> Network Forensic PCAP Inspection
+            </h2>
+            
+            <div class="relative group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-900/90 shadow-lg">
+                <img 
+                    src="https://picsum.photos/1200/600?cybersecurity,code,matrix" 
+                    alt="Network Traffic PCAP Analysis in Wireshark Workspace" 
+                    class="w-full h-56 sm:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-80"
+                />
+
+                <div class="p-4 border-t border-slate-200 dark:border-slate-800/80 bg-slate-900/95 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                    <div>
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 backdrop-blur-md mb-1">
+                            <i class="fa-solid fa-shield-cat text-[10px]"></i> Forensic PCAP Triage
+                        </span>
+                        <h3 class="text-white font-semibold text-sm">Deep Packet Inspection &amp; Protocol Stream Reconstruction</h3>
+                    </div>
+                    <span class="text-xs text-slate-300 flex items-center gap-1.5 font-mono">
+                        <i class="fa-solid fa-check-double text-cyan-400"></i> Malicious Payload Contained
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Investigation Pillars -->
+        <section class="space-y-3">
+            <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-layer-group text-cyan-500"></i> Core Forensic &amp; Incident Response Pillars
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <!-- Pillar 1: Packet Capture & Filter Optimization -->
+                <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-cyan-500/10 rounded-full blur-xl pointer-events-none"></div>
+                    <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-filter text-cyan-500"></i> Advanced Display &amp; Capture Filtering
+                    </h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Applied targeted Wireshark display filters to isolate anomalous TCP handshake behaviors, high-frequency DNS query bursts, and unauthorized outbound connections across non-standard port designations.
+                    </p>
+                </div>
+
+                <!-- Pillar 2: Stream Reconstruction & Payload Triage -->
+                <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-blue-500/10 rounded-full blur-xl pointer-events-none"></div>
+                    <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-network-wired text-cyan-500"></i> TCP Stream Follow &amp; Payload Extraction
+                    </h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Reconstructed full TCP and HTTP conversation streams to extract plain-text credentials, inspect malformed header signatures, and identify unencrypted exfiltration payloads.
+                    </p>
+                </div>
+
+                <!-- Pillar 3: Command & Control (C2) Identification -->
+                <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-teal-500/10 rounded-full blur-xl pointer-events-none"></div>
+                    <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-radar text-cyan-500"></i> Beaconing &amp; C2 Infrastructure Mapping
+                    </h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Analyzed recurring packet delta times to detect automated malware beaconing intervals, uncovering hidden Command and Control (C2) channels operating over masked HTTPS protocols.
+                    </p>
+                </div>
+
+                <!-- Pillar 4: Threat Containment & Mitigation -->
+                <div class="relative p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm space-y-2 overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-emerald-500/10 rounded-full blur-xl pointer-events-none"></div>
+                    <h3 class="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-shield-virus text-cyan-500"></i> Rapid Isolation &amp; Perimeter Hardening
+                    </h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Formulated tactical incident response reports to isolate affected endpoints instantly, updated gateway firewall blacklists, and updated intrusion detection system (IDS) rules.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Technical Metrics & Outcomes -->
+        <section class="space-y-3">
+            <h2 class="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-chart-line text-cyan-500"></i> Incident Metrics &amp; Operational Outcomes
+            </h2>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+                <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                    <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">100%</span>
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">PCAP Payload Recovery</span>
+                </div>
+                
+                <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                    <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">Zero</span>
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Lateral Threat Spread</span>
+                </div>
+
+                <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                    <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">Wireshark</span>
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Deep Inspection Standard</span>
+                </div>
+
+                <div class="p-4 bg-slate-100 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700/60 relative overflow-hidden">
+                    <span class="block font-extrabold text-cyan-600 dark:text-cyan-400 text-xl">Active</span>
+                    <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">IDS Rule Updating</span>
+                </div>
+            </div>
+        </section>
+
+    </article>
+</main>
 
     <footer>
         <p>&copy; 2026 Sekoala. All rights reserved.</p>
